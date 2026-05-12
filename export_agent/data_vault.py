@@ -97,23 +97,23 @@ def _export_dv_release(dv_rel: Any, rel_path: Path) -> dict:
     links += [{"name": l.name, "category": "non_historical"} for l in safe_get(dv_rel, "non_historical_links", default=[])]
 
     data_types = {}
-    for dt in safe_get(dv_rel, "data_types", default=[]):
-        data_types[dt.name] = {
+    for dt_name, dt in safe_get(dv_rel, "data_types", default={}).items():
+        data_types[dt_name] = {
             "max_data_length": safe_get(dt, "max_data_length"),
             "null_value": safe_get(dt, "null_value"),
             "unknown_value": safe_get(dt, "unknown_value"),
         }
 
     data_type_mappings = {}
-    for dm in safe_get(dv_rel, "data_type_mappings", default=[]):
-        data_type_mappings[dm.name] = {
+    for dm_name, dm in safe_get(dv_rel, "data_type_mappings", default={}).items():
+        data_type_mappings[dm_name] = {
             "data_type_target": safe_get(dm, "data_type_target", "name"),
             "data_length_target": safe_get(dm, "data_length_target"),
         }
 
     special_values = {}
-    for sv in safe_get(dv_rel, "special_values", default=[]):
-        special_values[sv.name] = {
+    for sv_name, sv in safe_get(dv_rel, "special_values", default={}).items():
+        special_values[sv_name] = {
             "null_value": safe_get(sv, "null_value"),
             "unknown_value": safe_get(sv, "unknown_value"),
         }

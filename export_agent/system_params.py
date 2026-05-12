@@ -23,6 +23,6 @@ def export_system_params(system: System) -> dict:
             log.warning("Skipping system parameter '%s': %s", safe_get(p, "name", default="?"), e)
 
     return {
-        "exported_at": datetime.datetime.utcnow().isoformat(),
+        "exported_at": datetime.datetime.now(datetime.UTC).isoformat(),
         "parameters": params,
     }

@@ -80,8 +80,6 @@ def _export_source_release(src_rel: Any, rel_path: Path) -> dict:
     for obj in safe_get(src_rel, "objects", default=[]):
         try:
             objects[obj.name] = _serialize_source_object(obj)
-        except DataNotFound as e:
-            log.warning("Skipping object '%s' in release: %s", safe_get(obj, "name", default="?"), e)
         except ReleaseIssue:
             check = safe_get(obj, "check_result")
             log.warning("ReleaseIssue on object '%s': %s", safe_get(obj, "name", default="?"), check)
@@ -131,10 +129,7 @@ def _serialize_source_object(obj: Any) -> dict:
             attr.name: _serialize_source_attribute(attr)
             for attr in safe_get(obj, "attributes", default=[])
         },
-        "relationships": [
-            _serialize_relationship(r)
-            for r in safe_get(obj, "relationships", default=[])
-        ],
+        "relationships": _fetch_relationships(obj),
     }
     if is_split:
         result.update({
@@ -145,6 +140,14 @@ def _serialize_source_object(obj: Any) -> dict:
             "deduplicate_data_on_load": safe_get(obj, "deduplicate_data_on_load"),
         })
     return result
+
+
+def _fetch_relationships(obj: Any) -> list:
+    try:
+        return [_serialize_relationship(r) for r in safe_get(obj, "relationships", default=[])]
+    except DataNotFound as e:
+        log.warning("No relationships found for object '%s': %s", safe_get(obj, "name", default="?"), e)
+        return []
 
 
 def _serialize_source_attribute(attr: Any) -> dict:

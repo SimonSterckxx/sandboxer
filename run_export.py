@@ -1,4 +1,3 @@
-import datetime
 import logging
 import os
 import sys
@@ -8,12 +7,9 @@ from vaultspeed_sdk.exceptions.data_not_found import DataNotFound
 from vaultspeed_sdk.exceptions.forbidden_action import ForbiddenActionException
 
 from export_agent.auth import authenticate
-from export_agent.database_links import export_database_links
 from export_agent.data_vault import export_data_vault
 from export_agent.generations import export_generations
 from export_agent.helpers import EXPORT_ROOT, sb, write_json
-from export_agent.manifest import build_manifest
-from export_agent.rbac import export_rbac
 from export_agent.source import export_source
 from export_agent.system_params import export_system_params
 
@@ -24,8 +20,7 @@ logging.basicConfig(
 log = logging.getLogger("run_export")
 
 
-def _export_project_metadata(project, name_to_link: dict) -> dict:
-    db_link = None
+def _export_project_metadata(project) -> dict:
     params = []
     for p in getattr(project, "parameters", []):
         params.append({"name": p.name, "value": getattr(p, "value", None)})
@@ -39,8 +34,6 @@ def _export_project_metadata(project, name_to_link: dict) -> dict:
 
 
 def main() -> None:
-    start_time = datetime.datetime.utcnow()
-
     # Authenticate
     try:
         _client, system = authenticate()
@@ -67,13 +60,10 @@ def main() -> None:
     # System-level exports
     write_json(EXPORT_ROOT / "system_params.json", export_system_params(system))
 
-    db_links_payload, name_to_link = export_database_links(system)
-    write_json(EXPORT_ROOT / "database_links.json", db_links_payload)
-
     # Project metadata
     proj_export_name = sb(project.name)
     proj_path = EXPORT_ROOT / "projects" / proj_export_name
-    proj_data = _export_project_metadata(project, name_to_link)
+    proj_data = _export_project_metadata(project)
     write_json(proj_path / "project.json", proj_data)
 
     # Sources
@@ -99,27 +89,12 @@ def main() -> None:
             log.warning("Insufficient privilege for DV '%s': %s", getattr(dv, "name", "?"), e)
 
     # Code generations
-    gen_summary = export_generations(system, EXPORT_ROOT)
-
-    # RBAC
-    write_json(EXPORT_ROOT / "rbac.json", export_rbac(system))
-
-    # Manifest
-    manifest = build_manifest(
-        project_name=project.name,
-        project_export_name=proj_export_name,
-        sources_count=sources_count,
-        dvs_count=dvs_count,
-        generations=gen_summary,
-        start_time=start_time,
-    )
-    write_json(EXPORT_ROOT / "manifest.json", manifest)
+    export_generations(system, EXPORT_ROOT)
 
     log.info(
-        "Export complete: %d source(s), %d DV(s), %d generation(s). Output: %s",
+        "Export complete: %d source(s), %d DV(s). Output: %s",
         sources_count,
         dvs_count,
-        len(gen_summary),
         EXPORT_ROOT,
     )
 
