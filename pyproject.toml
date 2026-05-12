@@ -1,0 +1,13 @@
+[project]
+name = "sandboxer"
+version = "0.1.0"
+requires-python = ">=3.11"
+dependencies = ["vaultspeed-sdk"]
+
+[[tool.uv.index]]
+name = "vaultspeed"
+url = "https://training-eu.vaultspeed.com/api/artifacts/pip/vaultspeed-sdk/simple"
+explicit = true
+
+[tool.uv.sources]
+vaultspeed-sdk = { index = "vaultspeed" }

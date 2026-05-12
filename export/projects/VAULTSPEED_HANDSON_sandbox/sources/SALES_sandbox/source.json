@@ -1,0 +1,493 @@
+{
+  "original_name": "SALES",
+  "original_short_name": "SLS",
+  "original_bk_name": "SALES",
+  "original_record_name": null,
+  "name": "SALES_sandbox",
+  "short_name": "SLS_sandbox",
+  "bk_name": "SALES_sandbox",
+  "record_name": "",
+  "physical_schema": "sales",
+  "cdc_type": "Change Data Capture",
+  "build_flag": true,
+  "database_link": "vs_postgres",
+  "parameters": [
+    {
+      "name": "CDC_TIMESTAMP",
+      "value": "CDC_TIMESTAMP"
+    },
+    {
+      "name": "CDC_FLAG",
+      "value": "JRN_FLAG"
+    },
+    {
+      "name": "HASHKEY_ESCAPE_CHARACTER",
+      "value": "\\"
+    },
+    {
+      "name": "USE_SOURCE_UK_AS_BK",
+      "value": "N"
+    },
+    {
+      "name": "DATA_QUALITY_BAD",
+      "value": "N"
+    },
+    {
+      "name": "CDC_RELIABLE",
+      "value": "N"
+    },
+    {
+      "name": "INTRA_LOADCYCLE_CHANGES",
+      "value": "Y"
+    },
+    {
+      "name": "TRANSACTION_TYPE_DELETE",
+      "value": "D"
+    },
+    {
+      "name": "TRANSACTION_TYPE_INSERT",
+      "value": "I"
+    },
+    {
+      "name": "SCHEMA_EXT",
+      "value": "SALES_EXT"
+    },
+    {
+      "name": "SCHEMA_STG",
+      "value": "SALES_STG"
+    },
+    {
+      "name": "TRANSACTION_TYPE_UPDATE",
+      "value": "U"
+    },
+    {
+      "name": "SCHEMA_CDC",
+      "value": "SALES_CDC"
+    },
+    {
+      "name": "PERSIST_DELTA_FIREWALL_VIEWS",
+      "value": "N"
+    },
+    {
+      "name": "REMOTE_JOURNALING_TABLES",
+      "value": "N"
+    },
+    {
+      "name": "SCHEMA_INI",
+      "value": "SALES_INI"
+    },
+    {
+      "name": "SCHEMA_CDCR",
+      "value": "SALES_CDCR"
+    },
+    {
+      "name": "CDC_TABLE_PREFIX",
+      "value": "CDC"
+    },
+    {
+      "name": "CDC_TABLE_SUFFIX",
+      "value": null
+    },
+    {
+      "name": "COLUMN_LENGTH_MULTIPLIER",
+      "value": "2"
+    },
+    {
+      "name": "EARLY_ARRIVING_FACTS",
+      "value": "N"
+    },
+    {
+      "name": "STORE_BK_FIELDS_IN_SAT",
+      "value": "N"
+    },
+    {
+      "name": "REMOTE_CDC_DBLINK_NAME",
+      "value": "DB_LINK_ACCK_OBI_OWNER"
+    },
+    {
+      "name": "NUMERIC_DECIMAL_CHARACTER_SOURCE",
+      "value": ","
+    },
+    {
+      "name": "SOURCE_RECORD_TYPE",
+      "value": "S"
+    },
+    {
+      "name": "RECORD_TYPE",
+      "value": "RECORD_TYPE"
+    },
+    {
+      "name": "NULL_RECORD_TYPE",
+      "value": "N"
+    },
+    {
+      "name": "EMPTYSTRING_IS_NULL",
+      "value": "N"
+    },
+    {
+      "name": "SCHEMA_MTD",
+      "value": "SALES_MTD"
+    },
+    {
+      "name": "SCHEMA_DTVR",
+      "value": "SALES_DTVR"
+    },
+    {
+      "name": "SCHEMA_MTDR",
+      "value": "SALES_MTDR"
+    },
+    {
+      "name": "SCHEMA_DFV",
+      "value": "SALES_DFV"
+    },
+    {
+      "name": "SCHEMA_DTV",
+      "value": "SALES_DTV"
+    },
+    {
+      "name": "DFV_TABLE_SUFFIX",
+      "value": null
+    },
+    {
+      "name": "DFV_TABLE_PREFIX",
+      "value": "VW"
+    },
+    {
+      "name": "MTD_EXCEPTION_RECORDS_TABLE_NAME",
+      "value": "MTD_EXCEPTION_RECORDS"
+    },
+    {
+      "name": "UNKNOWN_RECORD_TYPE",
+      "value": "U"
+    },
+    {
+      "name": "INSERT_ONLY_LOGIC",
+      "value": "Y"
+    },
+    {
+      "name": "ADD_SOURCE_VIEWS",
+      "value": "N"
+    },
+    {
+      "name": "CLOSE_DELETED_RECORDS",
+      "value": "N"
+    },
+    {
+      "name": "TRIM_SPACES_FROM_BUSINESS_KEY",
+      "value": "Y"
+    },
+    {
+      "name": "FMC_GENERATE_SRC_LOADING_SCRIPTS",
+      "value": "Y"
+    },
+    {
+      "name": "CREATE_INI_TABLES",
+      "value": "Y"
+    },
+    {
+      "name": "SOURCE_BV_DEP",
+      "value": "Y"
+    },
+    {
+      "name": "FMC_DYNAMIC_LOADING_WINDOW",
+      "value": "Y"
+    },
+    {
+      "name": "CDC_UPDATE_RECORD_ALL_ATTRIBUTES",
+      "value": "Y"
+    },
+    {
+      "name": "CDC_PRE_POST_IMAGE_FLAG",
+      "value": "CDC_PRE_POST_IMAGE_FLAG"
+    },
+    {
+      "name": "CDC_PRE_POST_IMAGE_UNIQUE_KEY",
+      "value": "CDC_PRE_POST_IMAGE_UNIQUE_KEY"
+    },
+    {
+      "name": "CDC_PRE_IMAGE_FLAG_VALUE",
+      "value": "PRE"
+    },
+    {
+      "name": "CDC_POST_IMAGE_FLAG_VALUE",
+      "value": "POST"
+    },
+    {
+      "name": "CDC_LOGPOSITION_AVAILABLE",
+      "value": "N"
+    },
+    {
+      "name": "CDC_LOGPOSITION",
+      "value": "CDC_LOGPOSITION"
+    },
+    {
+      "name": "NO_CHANGE_INDICATION_CHAR",
+      "value": "unchanged"
+    },
+    {
+      "name": "NO_CHANGE_INDICATION_NUMBER",
+      "value": "-1"
+    },
+    {
+      "name": "NO_CHANGE_INDICATION_DATE",
+      "value": "01/01/1970"
+    },
+    {
+      "name": "NO_CHANGE_INDICATION_TIME",
+      "value": "00:00:00"
+    },
+    {
+      "name": "NO_CHANGE_INDICATION_TIMESTAMP",
+      "value": "01/01/1970 00:00:00"
+    },
+    {
+      "name": "NO_CHANGE_INDICATION_OTHER",
+      "value": "unchanged"
+    },
+    {
+      "name": "CDC_PRE_IMAGE_AVAILABLE",
+      "value": "N"
+    },
+    {
+      "name": "SATELLITE_RECORD_TYPE",
+      "value": "SAT"
+    },
+    {
+      "name": "TRANSACTION_TYPE_SATELLITE",
+      "value": "SAT"
+    },
+    {
+      "name": "USE_OBJ_SRC_NAME_FOR_INI_CDC_TABLES",
+      "value": "Y"
+    },
+    {
+      "name": "USE_REMOTE_CDC_DBLINK",
+      "value": "N"
+    },
+    {
+      "name": "CREATE_REMOTE_DELTA_VIEW",
+      "value": "N"
+    },
+    {
+      "name": "USE_LCI_TIMESTAMP_FOR_INITIAL_LOAD",
+      "value": "Y"
+    },
+    {
+      "name": "DATABASE_OGG",
+      "value": "OGG"
+    },
+    {
+      "name": "GENERATE_OGG_METADATA",
+      "value": "N"
+    },
+    {
+      "name": "SCHEMA_OGG",
+      "value": "SALES_OGG"
+    },
+    {
+      "name": "FMC_OVERLAPPING_LOADING_WINDOWS",
+      "value": "N"
+    },
+    {
+      "name": "CAST_SOURCE_ATTRIBUTES",
+      "value": "N"
+    },
+    {
+      "name": "INSERT_ON_DELETE",
+      "value": "Y"
+    },
+    {
+      "name": "ERROR_CODE",
+      "value": "ERROR_CODE"
+    },
+    {
+      "name": "ERR_TABLE_PREFIX",
+      "value": "ERR"
+    },
+    {
+      "name": "ERR_TABLE_SUFFIX",
+      "value": "ERR"
+    },
+    {
+      "name": "REFERENTIAL_INTEGRITY_VALIDATED",
+      "value": "N"
+    },
+    {
+      "name": "REFERENTIAL_INTEGRITY_FORCE_LINK_LOAD",
+      "value": "N"
+    },
+    {
+      "name": "MIN_LOAD_TIMESTAMP",
+      "value": "MIN_LOAD_TIMESTAMP"
+    },
+    {
+      "name": "MAX_LOAD_TIMESTAMP",
+      "value": "MAX_LOAD_TIMESTAMP"
+    },
+    {
+      "name": "ORIGIN_ID",
+      "value": "ORIGIN_ID"
+    },
+    {
+      "name": "END_INTERVAL",
+      "value": "END_INTERVAL"
+    },
+    {
+      "name": "GENERAL_ORDER",
+      "value": "GENERAL_ORDER"
+    },
+    {
+      "name": "FMC_WINDOW_OVERLAP_SIZE",
+      "value": "15"
+    },
+    {
+      "name": "FMC_WINDOW_OVERLAP_TYPE",
+      "value": "minute"
+    },
+    {
+      "name": "CREATE_CDC_TABLES",
+      "value": "Y"
+    },
+    {
+      "name": "AGG_HASH_DIFF",
+      "value": "AGG_HASH_DIFF"
+    },
+    {
+      "name": "COUNT_MULTI_ACTIVE",
+      "value": "COUNT_MULTI_ACTIVE"
+    },
+    {
+      "name": "STREAMING_SOURCE",
+      "value": "N"
+    },
+    {
+      "name": "WATER_MARK_SIZE",
+      "value": "120"
+    },
+    {
+      "name": "ERROR_RECORD_RETENTION_TIME",
+      "value": "120"
+    },
+    {
+      "name": "STREAMING_EXT_TABLE_PREFIX",
+      "value": "EXT"
+    },
+    {
+      "name": "STREAMING_EXT_TABLE_SUFFIX",
+      "value": "LATE"
+    },
+    {
+      "name": "STREAMING_STG_TABLE_PREFIX",
+      "value": "STG"
+    },
+    {
+      "name": "STREAMING_STG_TABLE_SUFFIX",
+      "value": "FIX"
+    },
+    {
+      "name": "OBJECT_SPECIFIC_LOADING_WINDOW",
+      "value": "N"
+    },
+    {
+      "name": "CDC_BASED_LOADING_WINDOW",
+      "value": "N"
+    },
+    {
+      "name": "SCHEMA_INI_R",
+      "value": "SALES"
+    },
+    {
+      "name": "SCHEMA_CDC_KAFKA",
+      "value": "SALES_CDC_KAFKA"
+    },
+    {
+      "name": "GENERAL_TIME_FORMAT_STREAM",
+      "value": "HH:mm:ss"
+    },
+    {
+      "name": "GENERAL_DATE_FORMAT_STREAM",
+      "value": "dd/MM/yyyy"
+    },
+    {
+      "name": "GENERAL_TIMESTAMP_FORMAT_STREAM",
+      "value": "dd/MM/yyyy HH:mm:ss.SSSSSS"
+    },
+    {
+      "name": "CDC_SEQUENCE",
+      "value": "CDC_SEQUENCE"
+    },
+    {
+      "name": "ADD_RECORD_TRACKING_SATELLITE",
+      "value": "N"
+    },
+    {
+      "name": "STG_TABLE_CURR_PREFIX",
+      "value": "CURR"
+    },
+    {
+      "name": "STG_TABLE_CURR_SUFFIX",
+      "value": "CURR"
+    },
+    {
+      "name": "STG_TABLE_PREV_PREFIX",
+      "value": "PREV"
+    },
+    {
+      "name": "STG_TABLE_PREV_SUFFIX",
+      "value": "PREV"
+    },
+    {
+      "name": "ADD_NH_COUNTER_RECORD_DELETE",
+      "value": "N"
+    },
+    {
+      "name": "NH_COUNTER_POSITIVE_VALUE",
+      "value": "1"
+    },
+    {
+      "name": "NH_COUNTER_NEGATIVE_VALUE",
+      "value": "-1"
+    },
+    {
+      "name": "NH_COUNTER",
+      "value": "COUNTER"
+    },
+    {
+      "name": "USE_ORIGINAL_SOURCE_TABLE_NAME_FOR_INI_CDC_OBJECTS",
+      "value": "N"
+    },
+    {
+      "name": "CONVERT_SOURCE_TIMEZONE",
+      "value": "N"
+    },
+    {
+      "name": "SOURCE_TIMEZONE",
+      "value": "UTC"
+    },
+    {
+      "name": "DETECT_UPDATES_INSERTS_ON_FULL_LOAD",
+      "value": "Y"
+    },
+    {
+      "name": "CDC_TIMESTAMP_FORMAT_MASK",
+      "value": null
+    },
+    {
+      "name": "CAST_VS_MANAGED_ATTRIBUTES",
+      "value": "Y"
+    }
+  ],
+  "object_exclusions": [
+    {
+      "pattern": "%LOG",
+      "reason": "remove logging tables"
+    }
+  ],
+  "attribute_exclusions": [],
+  "name_removal_patterns": [
+    {
+      "pattern": "CUST_",
+      "reason": "remove generic naming pattern"
+    }
+  ]
+}

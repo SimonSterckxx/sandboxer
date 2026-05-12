@@ -1,0 +1,137 @@
+{
+  "number": "1",
+  "comment": "Release 1 for products",
+  "saved": true,
+  "editable": false,
+  "locked": true,
+  "available_as_base": true,
+  "prev_release": null,
+  "objects": {
+    "INV_PROD_SHOPS": {
+      "object_type": "Many to Many Link and Satellite",
+      "cdc_type": "Change Data Capture",
+      "multi_active": false,
+      "is_split": true,
+      "attributes": {
+        "INVENTORY_ID": {
+          "business_key": false,
+          "universal_identifier": false,
+          "subsequence_attribute": false,
+          "non_historic": false,
+          "abbreviated_name": "INVENTORY_ID",
+          "primary_key": false,
+          "data_type": "NUMERIC",
+          "data_length": null
+        },
+        "MOTOR_VEHICLE_ID": {
+          "business_key": false,
+          "universal_identifier": false,
+          "subsequence_attribute": false,
+          "non_historic": false,
+          "abbreviated_name": "MOTOR_VEHICLE_ID",
+          "primary_key": false,
+          "data_type": "VARCHAR",
+          "data_length": 100
+        },
+        "NON_MOTOR_VEHICLE_ID": {
+          "business_key": false,
+          "universal_identifier": false,
+          "subsequence_attribute": false,
+          "non_historic": false,
+          "abbreviated_name": "NON_MOTOR_VEHICLE_ID",
+          "primary_key": false,
+          "data_type": "VARCHAR",
+          "data_length": 100
+        },
+        "SHOP_ID": {
+          "business_key": false,
+          "universal_identifier": false,
+          "subsequence_attribute": false,
+          "non_historic": false,
+          "abbreviated_name": "SHOP_ID",
+          "primary_key": false,
+          "data_type": "NUMERIC",
+          "data_length": null
+        }
+      },
+      "relationships": [
+        {
+          "name": "INVENTORY_MOTO_VEHICLES",
+          "driving_key": false,
+          "attributes": [
+            {
+              "attribute_name": "MOTOR_VEHICLE_ID",
+              "ref_attribute_name": "MOTOR_VEHICLE_ID"
+            }
+          ]
+        },
+        {
+          "name": "INVENTORY_NON_MOTOR_VEHICLES",
+          "driving_key": false,
+          "attributes": [
+            {
+              "attribute_name": "NON_MOTOR_VEHICLE_ID",
+              "ref_attribute_name": "NON_MOTOR_VEHICLE_ID"
+            }
+          ]
+        },
+        {
+          "name": "INVENTORY_SHOP",
+          "driving_key": false,
+          "attributes": [
+            {
+              "attribute_name": "SHOP_ID",
+              "ref_attribute_name": "SHOP_ID"
+            }
+          ]
+        },
+        {
+          "name": "INVPRODSHOPS_INVENTORY_1_FK",
+          "driving_key": false,
+          "attributes": [
+            {
+              "attribute_name": "INVENTORY_ID",
+              "ref_attribute_name": "INVENTORY_ID"
+            }
+          ]
+        }
+      ],
+      "parent_table_identifier": 14,
+      "auto_sync_constraints": false,
+      "auto_sync_referencing_constraints": false,
+      "auto_sync_attributes": false,
+      "deduplicate_data_on_load": true
+    }
+  },
+  "hubs": {
+    "HUB_INVENTORY": {
+      "hub_type": "SINGLE MASTER"
+    },
+    "HUB_MOTOR_VEHICLES": {
+      "hub_type": "MULTI MASTER"
+    },
+    "HUB_NON_MOTOR_VEHICLES": {
+      "hub_type": "MULTI MASTER"
+    },
+    "HUB_SHOPS": {
+      "hub_type": "SINGLE MASTER"
+    }
+  },
+  "sats": {
+    "SAT_PRD_INVENTORY": {
+      "splits": {}
+    },
+    "SAT_PRD_MOTOR_VEHICLES": {
+      "splits": {}
+    },
+    "SAT_PRD_NON_MOTOR_VEHICLES": {
+      "splits": {}
+    },
+    "SAT_PRD_SHOPS": {
+      "splits": {}
+    },
+    "LDS_PRD_INV_PROD_SHOPS": {
+      "splits": {}
+    }
+  }
+}

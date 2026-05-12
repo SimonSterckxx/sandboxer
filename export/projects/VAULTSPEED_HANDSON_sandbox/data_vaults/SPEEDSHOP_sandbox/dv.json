@@ -1,0 +1,202 @@
+{
+  "original_name": "SPEEDSHOP",
+  "original_code": "SPEEDSHOP",
+  "name": "SPEEDSHOP_sandbox",
+  "code": "SPEEDSHOP_sandbox",
+  "database_type": "SNOWFLAKE",
+  "parameters": [
+    {
+      "name": "ETL_GENERATION_TYPE",
+      "value": "SQL"
+    },
+    {
+      "name": "HASHKEY_DELIMITER",
+      "value": "\\#"
+    },
+    {
+      "name": "CURRENT_RECORD_LOAD_END_DATE",
+      "value": "31/12/2999 23:59:59"
+    },
+    {
+      "name": "SCHEMA_FL",
+      "value": "SPEEDSHOP_FL"
+    },
+    {
+      "name": "FOLDER_SPLIT",
+      "value": "100"
+    },
+    {
+      "name": "SCHEMA_BV",
+      "value": "SPEEDSHOP_BV"
+    },
+    {
+      "name": "GENERAL_DATE_FORMAT",
+      "value": "DD/MM/YYYY"
+    },
+    {
+      "name": "GENERAL_DATE_FORMAT_ID",
+      "value": "103"
+    },
+    {
+      "name": "GENERAL_NUMBER_FORMAT",
+      "value": "9999999999999D9999999999"
+    },
+    {
+      "name": "GENERAL_NUMBER_FORMAT_ID",
+      "value": "1"
+    },
+    {
+      "name": "GENERAL_TIMESTAMP_FORMAT",
+      "value": "DD/MM/YYYY HH24:MI:SS"
+    },
+    {
+      "name": "GENERAL_TIMESTAMP_FORMAT_ID",
+      "value": "103"
+    },
+    {
+      "name": "NUMERIC_DECIMAL_CHARACTER_TARGET",
+      "value": ","
+    },
+    {
+      "name": "ATTR_CASE_INSENSITIVE_COMPARISON",
+      "value": "Y"
+    },
+    {
+      "name": "USE_MERGE_STATEMENT",
+      "value": "N"
+    },
+    {
+      "name": "LOAD_TIMESTAMP_WITH_TZ",
+      "value": "N"
+    },
+    {
+      "name": "CDC_TIMESTAMP_WITH_TZ",
+      "value": "N"
+    },
+    {
+      "name": "GENERAL_CHAR_FORMAT",
+      "value": "CHAR"
+    },
+    {
+      "name": "GENERAL_TIME_FORMAT",
+      "value": "HH24:MI:SS"
+    },
+    {
+      "name": "GENERAL_TIME_FORMAT_ID",
+      "value": "108"
+    },
+    {
+      "name": "TRIM_FUNCTION_AVAILABLE",
+      "value": "N"
+    },
+    {
+      "name": "GENERATE_FOREIGN_KEYS",
+      "value": "Y"
+    },
+    {
+      "name": "STORE_TEMP_IN_STAGING",
+      "value": "N"
+    },
+    {
+      "name": "UPDATE_LOAD_CYCLE_ID_ON_UPDATE_DELETE",
+      "value": "N"
+    },
+    {
+      "name": "STORE_HUB_HASH_KEYS_IN_LINK_SAT",
+      "value": "N"
+    },
+    {
+      "name": "GENERATE_PRIMARY_UNIQUE_KEYS",
+      "value": "Y"
+    },
+    {
+      "name": "GENERATE_SCHEMA_DEFINITIONS",
+      "value": "Y"
+    },
+    {
+      "name": "FMC_TYPE",
+      "value": "Airflow"
+    },
+    {
+      "name": "DATA_ORDER",
+      "value": "DUMMY"
+    },
+    {
+      "name": "SNAPSHOT_TS",
+      "value": "SNAPSHOT_TS"
+    },
+    {
+      "name": "ADD_RECORD_SOURCE_ATTRIBUTE",
+      "value": "N"
+    },
+    {
+      "name": "RECORD_SOURCE",
+      "value": "RECORD_SOURCE"
+    },
+    {
+      "name": "RECORD_SOURCE_VALUE_TEMPLATE",
+      "value": "<record_src_name>.<table_abbreviated_name>"
+    },
+    {
+      "name": "CAST_BINARY_TO_HEX",
+      "value": "Y"
+    },
+    {
+      "name": "CAST_NUMBER_WITH_FORMAT_FOR_HASH",
+      "value": "Y"
+    },
+    {
+      "name": "CAST_TO_NVARCHAR_IN_HASH",
+      "value": "N"
+    },
+    {
+      "name": "CAST_TO_VARCHAR_IN_HASH",
+      "value": "Y"
+    },
+    {
+      "name": "DENODO_DATASOURCE_NAME",
+      "value": null
+    },
+    {
+      "name": "GENERATE_DENODO_WRAPPERS_AND_BASE_VIEWS",
+      "value": "N"
+    },
+    {
+      "name": "MAX_QUERY_SIZE",
+      "value": "15"
+    },
+    {
+      "name": "SK_SUFFIX",
+      "value": "SK"
+    },
+    {
+      "name": "SK_PREFIX",
+      "value": null
+    },
+    {
+      "name": "CONVERT_FMC_TIMEZONE",
+      "value": "N"
+    },
+    {
+      "name": "TARGET_TIMEZONE",
+      "value": "UTC"
+    },
+    {
+      "name": "FMC_TIMEZONE",
+      "value": "UTC"
+    },
+    {
+      "name": "GENERAL_BINARY_FORMAT",
+      "value": "HEX"
+    },
+    {
+      "name": "DELTA_GENERATE_INIT_MAPPINGS",
+      "value": "changed"
+    },
+    {
+      "name": "DELTA_GENERATE_INCR_MAPPINGS",
+      "value": "changed"
+    }
+  ],
+  "fmc_flows": []
+}

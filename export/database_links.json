@@ -1,0 +1,28 @@
+{
+  "links": [
+    {
+      "name": "vs_postgres",
+      "link_type": "agent",
+      "database_type": "POSTGRESQL",
+      "url": null
+    },
+    {
+      "name": "import_export_yaml",
+      "link_type": "agent",
+      "database_type": "POSTGRESQL",
+      "url": null
+    },
+    {
+      "name": "snowflake",
+      "link_type": "agent",
+      "database_type": "SNOWFLAKE",
+      "url": null
+    },
+    {
+      "name": "vs_snowflake",
+      "link_type": "agent",
+      "database_type": "SNOWFLAKE",
+      "url": null
+    }
+  ]
+}

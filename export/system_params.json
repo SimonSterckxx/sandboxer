@@ -1,0 +1,1433 @@
+{
+  "exported_at": "2026-05-12T09:15:19.495633",
+  "parameters": [
+    {
+      "name": "OBJECT_NAMES_CASE_SENSITIVE",
+      "value": "UPPER",
+      "type": "Important parameters",
+      "description": "Determines whether the object names (tables, views, indexes, etc \u2026) are case sensitive or not. Note: This parameter will not be able to be changed after sources have been added, unless all sources are removed."
+    },
+    {
+      "name": "BK_PREFIX",
+      "value": null,
+      "type": "Attribute names",
+      "description": "Prefix of the names of the Business Key columns of the HUB tables."
+    },
+    {
+      "name": "BK_SUFFIX",
+      "value": "BK",
+      "type": "Attribute names",
+      "description": "Suffix of the names of the Business Key columns of the HUB tables."
+    },
+    {
+      "name": "CDC_TIMESTAMP",
+      "value": "CDC_TIMESTAMP",
+      "type": "Attribute names",
+      "description": "The name of the column used to store the date and time of the change detected in the source system."
+    },
+    {
+      "name": "CDC_FLAG",
+      "value": "JRN_FLAG",
+      "type": "Attribute names",
+      "description": "The name of the column/flag used to indicate the kind of change detected in the source system."
+    },
+    {
+      "name": "FK_PREFIX",
+      "value": null,
+      "type": "Attribute names",
+      "description": "Prefix of the names of the Foreign Key constraints of all generated tables."
+    },
+    {
+      "name": "FK_SUFFIX",
+      "value": "FK",
+      "type": "Attribute names",
+      "description": "Suffix of the names of the Foreign Key constraints of all generated tables."
+    },
+    {
+      "name": "HUB_HASH_KEY_PREFIX",
+      "value": null,
+      "type": "Attribute names",
+      "description": "Prefix of the names of the Hash Key columns of the HUB tables."
+    },
+    {
+      "name": "HUB_HASH_KEY_SUFFIX",
+      "value": "HKEY",
+      "type": "Attribute names",
+      "description": "Suffix of the names of the Hash Key columns of the HUB tables."
+    },
+    {
+      "name": "HUB_TABLE_PREFIX",
+      "value": "HUB",
+      "type": "Object names",
+      "description": "Prefix of the names of the HUB tables."
+    },
+    {
+      "name": "HUB_TABLE_SUFFIX",
+      "value": null,
+      "type": "Object names",
+      "description": "Suffix of the names of the HUB tables."
+    },
+    {
+      "name": "LDS_TABLE_PREFIX",
+      "value": "LDS",
+      "type": "Object names",
+      "description": "Prefix of the names of the Satellite on Object Based Link tables."
+    },
+    {
+      "name": "LND_TABLE_PREFIX",
+      "value": "LND",
+      "type": "Object names",
+      "description": "Prefix of the names of the Object Based Link tables."
+    },
+    {
+      "name": "LND_TABLE_SUFFIX",
+      "value": null,
+      "type": "Object names",
+      "description": "Suffix of the names of the Object Based Link tables."
+    },
+    {
+      "name": "LNK_HASH_KEY_PREFIX",
+      "value": "LNK",
+      "type": "Attribute names",
+      "description": "Prefix of the names of the Hash Key columns of the Link tables."
+    },
+    {
+      "name": "LNK_HASH_KEY_SUFFIX",
+      "value": "HKEY",
+      "type": "Attribute names",
+      "description": "Suffix of the names of the Hash Key columns of the Link tables."
+    },
+    {
+      "name": "LNK_TABLE_PREFIX",
+      "value": "LNK",
+      "type": "Object names",
+      "description": "Prefix of the names of the Link tables."
+    },
+    {
+      "name": "LNK_TABLE_SUFFIX",
+      "value": null,
+      "type": "Object names",
+      "description": "Suffix of the names of the Link tables."
+    },
+    {
+      "name": "LKS_TABLE_PREFIX",
+      "value": "LKS",
+      "type": "Object names",
+      "description": "Prefix of the names of the Satellite on Link tables."
+    },
+    {
+      "name": "LOAD_CYCLE_ID",
+      "value": "LOAD_CYCLE_ID",
+      "type": "Attribute names",
+      "description": "The name of the column used to hold the ID of the run."
+    },
+    {
+      "name": "LOAD_TIMESTAMP",
+      "value": "LOAD_DATE",
+      "type": "Attribute names",
+      "description": "The name of the column used to hold the load date of the records in the raw data vault."
+    },
+    {
+      "name": "LOAD_END_TIMESTAMP",
+      "value": "LOAD_END_DATE",
+      "type": "Attribute names",
+      "description": "The name of the column used to hold the load end date of the records in the satellites."
+    },
+    {
+      "name": "NHL_TABLE_PREFIX",
+      "value": "NHL",
+      "type": "Object names",
+      "description": "Prefix of the names of the Non Historical Link tables."
+    },
+    {
+      "name": "NHL_TABLE_SUFFIX",
+      "value": null,
+      "type": "Object names",
+      "description": "Suffix of the names of the Non Historical Link tables."
+    },
+    {
+      "name": "DDL_DROP",
+      "value": "Y",
+      "type": "General parameters",
+      "description": "Indicates whether generated DDL will drop the tables before creating them. If set to N, no drop statements will be included in the generated DDL (which will result in errors when these tables already exist). Does not apply to BRIDGE or PIT objects."
+    },
+    {
+      "name": "PK_PREFIX",
+      "value": null,
+      "type": "Attribute names",
+      "description": "Prefix of the names of the Primary Key constraints of all generated tables."
+    },
+    {
+      "name": "PK_SUFFIX",
+      "value": "PK",
+      "type": "Attribute names",
+      "description": "Suffix of the names of the Primary Key constraints of all generated tables."
+    },
+    {
+      "name": "SAT_TABLE_PREFIX",
+      "value": "SAT",
+      "type": "Object names",
+      "description": "Prefix of the names of the Satellite tables."
+    },
+    {
+      "name": "SAT_TABLE_SUFFIX",
+      "value": null,
+      "type": "Object names",
+      "description": "Suffix of the names of the Satellite tables."
+    },
+    {
+      "name": "HASHKEY_ESCAPE_CHARACTER",
+      "value": "\\",
+      "type": "Hash parameters",
+      "description": "Determines the escape character used in the calculation of the hash key and hash difference. For Snowflake, Bigquery, Apache Spark and Singlestore the value \\ will be automatically doubled while generating code"
+    },
+    {
+      "name": "SRC_NAME_IN_BK",
+      "value": "SRC_BK",
+      "type": "Attribute names",
+      "description": "The name of the column that stores the source name in the HUB. Used in the calculation of the HUB hash key."
+    },
+    {
+      "name": "UK_PREFIX",
+      "value": null,
+      "type": "Attribute names",
+      "description": "Prefix of the names of the Unique Key constraints of all generated tables."
+    },
+    {
+      "name": "UK_SUFFIX",
+      "value": "UK",
+      "type": "Attribute names",
+      "description": "Suffix of the names of the Unique Key constraints of all generated tables."
+    },
+    {
+      "name": "USE_SOURCE_UK_AS_BK",
+      "value": "N",
+      "type": "Important parameters",
+      "description": "Indicates whether the system is allowed to use the unique keys of the source system as business keys."
+    },
+    {
+      "name": "DATA_QUALITY_BAD",
+      "value": "N",
+      "type": "Data quality",
+      "description": "Indicates whether the data quality of a source is bad. (If bad, then Y.) This can happen when columns contain data that may not correspond to the suggested data type for that attribute."
+    },
+    {
+      "name": "HASH_DIFF",
+      "value": "HASH_DIFF",
+      "type": "Attribute names",
+      "description": "The name of the column that stores the hash of all historic attributes in the SAT."
+    },
+    {
+      "name": "CDC_RELIABLE",
+      "value": "N",
+      "type": "CDC parameters",
+      "description": "Indicates whether CDC information (Insert, Delete and Update flags) is available and reliable. If set to N, more computationally expensive logic will be used."
+    },
+    {
+      "name": "INTRA_LOADCYCLE_CHANGES",
+      "value": "Y",
+      "type": "Important parameters",
+      "description": "Indicates whether all the changes during a loading cycle should be recorded. If set to N, only the last change during a loading cycle will be recorded and one timestamp will be used for the whole load cycle. If set to Y, the same timestamp will not be used for the whole load cycle."
+    },
+    {
+      "name": "HASHKEY_DELIMITER",
+      "value": "#",
+      "type": "Hash parameters",
+      "description": "Determines the character used as a delimiter between different business keys and attribute values of an object."
+    },
+    {
+      "name": "HASH_ALGORITHM",
+      "value": "SHA1",
+      "type": "Hash parameters",
+      "description": "Determines the hash algorithm to use for the hash key and hashdiff fields. The \"HASH\" algorithm is only available for Snowflake,\"SHA256\" algorithm available for Snowflake, BigQuery, Azure Synapse and SQL Server."
+    },
+    {
+      "name": "DELETE_FLAG",
+      "value": "DELETE_FLAG",
+      "type": "Attribute names",
+      "description": "The name of the column in the SATs used to indicate whether a record was deleted in the source system."
+    },
+    {
+      "name": "LKS_TABLE_SUFFIX",
+      "value": null,
+      "type": "Object names",
+      "description": "Suffix of the names of the Satellite on Link tables."
+    },
+    {
+      "name": "LDS_TABLE_SUFFIX",
+      "value": null,
+      "type": "Object names",
+      "description": "Suffix of the names of the Satellite on Object Based Link tables."
+    },
+    {
+      "name": "LND_HASH_KEY_PREFIX",
+      "value": "LND",
+      "type": "Attribute names",
+      "description": "Prefix of the names of the Hash Key columns of the Object Based Link tables."
+    },
+    {
+      "name": "LND_HASH_KEY_SUFFIX",
+      "value": "HKEY",
+      "type": "Attribute names",
+      "description": "Suffix of the names of the Hash Key columns of the Object Based Link tables."
+    },
+    {
+      "name": "TEMP_TABLE_PREFIX",
+      "value": null,
+      "type": "Object names",
+      "description": "Prefix of the names of the Temporary tables that are used for transformation logic."
+    },
+    {
+      "name": "TEMP_TABLE_SUFFIX",
+      "value": "TMP",
+      "type": "Object names",
+      "description": "Suffix of the names of the Temporary tables that are used for transformation logic."
+    },
+    {
+      "name": "USE_CDC_TS_AS_LOAD_DATES",
+      "value": "N",
+      "type": "General parameters",
+      "description": "Use the cdc timestamp (aka transaction timestamp or modification date) for the load date and load end date, instead of a generated technical date. This parameter is not needed when insert only logic is used."
+    },
+    {
+      "name": "TRANSACTION_TYPE_DELETE",
+      "value": "D",
+      "type": "Literal values",
+      "description": "Determines the value for the transaction type attribute to identify delete transaction types."
+    },
+    {
+      "name": "TRANSACTION_TYPE_INSERT",
+      "value": "I",
+      "type": "Literal values",
+      "description": "Determines the value for the transaction type attribute to identify insert transaction types."
+    },
+    {
+      "name": "CURRENT_RECORD_LOAD_END_DATE",
+      "value": "31/12/2999 23:59:59",
+      "type": "Literal values",
+      "description": "Determines the Load end date used for the current valid or active record(s). Format should be the same as the GENERAL_TIMESTAMP_FORMAT parameter."
+    },
+    {
+      "name": "DATA_QUALITY_BAD_COLUMN_PREFIX",
+      "value": null,
+      "type": "Attribute names",
+      "description": "Prefix of the names of the attribute columns when the data quality is set to bad."
+    },
+    {
+      "name": "DATA_QUALITY_BAD_COLUMN_SUFFIX",
+      "value": "ORG",
+      "type": "Attribute names",
+      "description": "Suffix of the names of the attribute columns when the data quality is set to bad."
+    },
+    {
+      "name": "SOURCE_IN_TEMP",
+      "value": "SOURCE",
+      "type": "Attribute names",
+      "description": "The name of the column that holds the record source in the temp table (used for loading logic)."
+    },
+    {
+      "name": "EQUAL_IN_TEMP",
+      "value": "EQUAL",
+      "type": "Attribute names",
+      "description": "The name of the column used to store the EQUAL metadata attribute in the temp tables."
+    },
+    {
+      "name": "SCHEMA_EXT",
+      "value": "PROJECT_EXT",
+      "type": "Schema names",
+      "description": "The name of the schema for the Extraction tables.This parameter supports templating, when creating a source, the string \"PROJECT\" will be replaced by the source name. For Snowflake/Databricks/Microsoft Fabric targets Database\\Catalog name can be included into schema definition separating them by dot eg. 'database.schema'."
+    },
+    {
+      "name": "SCHEMA_STG",
+      "value": "PROJECT_STG",
+      "type": "Schema names",
+      "description": "The name of the schema for the Staging layer.This parameter supports templating, when creating a source, the string \"PROJECT\" will be replaced by the source name. For Snowflake/Databricks/Microsoft Fabric targets Database\\Catalog name can be included into schema definition separating them by dot eg. 'database.schema'."
+    },
+    {
+      "name": "SCHEMA_FL",
+      "value": "PROJECT_FL",
+      "type": "Schema names",
+      "description": "The name of the schema for the Raw Data Vault tables.This parameter supports templating, when creating a dv, the string \"PROJECT\" will be replaced by the dv name. For Snowflake/Databricks/Microsoft Fabric targets Database\\Catalog name can be included into schema definition separating them by dot eg. 'database.schema'."
+    },
+    {
+      "name": "TRANSACTION_TYPE_UPDATE",
+      "value": "U",
+      "type": "Literal values",
+      "description": "Determines the value for the transaction type attribute to identify update transaction types."
+    },
+    {
+      "name": "SCHEMA_CDC",
+      "value": "PROJECT_CDC",
+      "type": "Schema names",
+      "description": "The name of the schema for the incremental load tables.This parameter supports templating, when creating a source, the string \"PROJECT\" will be replaced by the source name. For Snowflake/Databricks/Microsoft Fabric targets Database\\Catalog name can be included into schema definition separating them by dot eg. 'database.schema'."
+    },
+    {
+      "name": "PERSIST_DELTA_FIREWALL_VIEWS",
+      "value": "N",
+      "type": "Important parameters",
+      "description": "Indicates whether a table should be created for the delta firewall."
+    },
+    {
+      "name": "REMOTE_JOURNALING_TABLES",
+      "value": "N",
+      "type": "CDC parameters",
+      "description": "Indicates whether CDC tables are not in the Data Warehouse, but on a remote database. The generated DDL only works if the database type of the source is one of the database types that are available as target."
+    },
+    {
+      "name": "SCHEMA_INI",
+      "value": "PROJECT_INI",
+      "type": "Schema names",
+      "description": "The name of the schema for the initial load tables.This parameter supports templating, when creating a source, the string \"PROJECT\" will be replaced by the source name. For Snowflake/Databricks/Microsoft Fabric targets Database\\Catalog name can be included into schema definition separating them by dot eg. 'database.schema'."
+    },
+    {
+      "name": "SCHEMA_CDCR",
+      "value": "PROJECT_CDCR",
+      "type": "Schema names",
+      "description": "The name of the schema for the incremental load tables on the source (only used when REMOTE_JOURNALING_TABLES is Y).This parameter supports templating, when creating a source, the string \"PROJECT\" will be replaced by the source name. For Snowflake/Databricks/Microsoft Fabric targets Database\\Catalog name can be included into schema definition separating them by dot eg. 'database.schema'."
+    },
+    {
+      "name": "SCHEMA_BV",
+      "value": "PROJECT_BV",
+      "type": "Schema names",
+      "description": "The name of the schema for the Business Vault tables.This parameter supports templating, when creating a dv, the string \"PROJECT\" will be replaced by the dv name. For Snowflake/Databricks/Microsoft Fabric targets Database\\Catalog name can be included into schema definition separating them by dot eg. 'database.schema'."
+    },
+    {
+      "name": "CDC_TABLE_PREFIX",
+      "value": "CDC",
+      "type": "Object names",
+      "description": "This parameter contains the prefix that will be added to the name of the source table when the CDC table name is different from the imported source tabel name "
+    },
+    {
+      "name": "CDC_TABLE_SUFFIX",
+      "value": null,
+      "type": "Object names",
+      "description": "This parameter contains the suffix that will be added to the name of the source table when the CDC table name is different from the imported source tabel name   "
+    },
+    {
+      "name": "SCHEMA_PROCEDURES",
+      "value": "PROJECT_PROC",
+      "type": "Schema names",
+      "description": "The name of the schema for where all the procedures will be deployed.This parameter supports templating, when creating a project, the string \"PROJECT\" will be replaced by the project name. For Snowflake/Databricks/Microsoft Fabric targets Database\\Catalog name can be included into schema definition separating them by dot eg. 'database.schema'."
+    },
+    {
+      "name": "COLUMN_LENGTH_MULTIPLIER",
+      "value": "2",
+      "type": "Important parameters",
+      "description": "Determines the factor by which the length of the source system string attribute will be multiplied, to calculate the Raw Data Vault string attribute length."
+    },
+    {
+      "name": "TIME_ZONE_LOCAL",
+      "value": "Y",
+      "type": "Important parameters",
+      "description": "Indicates whether the project uses the same time zone for all of its timestamps. If set to N, will enable CDC_TIMESTAMP_WITH_TZ  and LOAD_TIMESTAMP_WITH_TZ."
+    },
+    {
+      "name": "SCHEMA_FMC",
+      "value": "PROJECT_FMC",
+      "type": "Schema names",
+      "description": "The name of the schema for the Flow Management Control layer.This parameter supports templating, when creating a project, the string \"PROJECT\" will be replaced by the project name. For Snowflake/Databricks/Microsoft Fabric targets Database\\Catalog name can be included into schema definition separating them by dot eg. 'database.schema'."
+    },
+    {
+      "name": "ORACLE_12_1_OR_HIGHER",
+      "value": "Y",
+      "type": "Important parameters",
+      "description": "Indicates whether Oracle version is 12c Release 1 or higher. Since Oracle Database 12c Release 1 a different hashing algorithm has to be used. (Leave this on Y for other database types.)"
+    },
+    {
+      "name": "EARLY_ARRIVING_FACTS",
+      "value": "N",
+      "type": "Important parameters",
+      "description": "Indicates whether HUB business keys will be loaded from the parent object and all the related child objects. If set to N, business keys will be loaded ONLY from the parent object."
+    },
+    {
+      "name": "STORE_BK_FIELDS_IN_SAT",
+      "value": "N",
+      "type": "Important parameters",
+      "description": "Indicates whether all the business keys should be stored as descriptive fields in the SAT."
+    },
+    {
+      "name": "SCHEMA_FL_MIGRATION",
+      "value": "PROJECT_FL",
+      "type": "Schema names",
+      "description": "The name of the schema for the migration of Raw Data Vault tables. Old Data Vaults generated via FA3.0 use the schema specified here vs. the new one specified by SCHEMA_FL.This parameter supports templating, when creating a project, the string \"PROJECT\" will be replaced by the project name. For Snowflake/Databricks/Microsoft Fabric targets Database\\Catalog name can be included into schema definition separating them by dot eg. 'database.schema'."
+    },
+    {
+      "name": "REMOTE_CDC_DBLINK_NAME",
+      "value": "DB_LINK_ACCK_OBI_OWNER",
+      "type": "CDC parameters",
+      "description": "Determines the name for the database link used to connect to the remote CDC schema. Note: this is a name, not the link itself, to avoid exposing sensitive information."
+    },
+    {
+      "name": "NUMERIC_DECIMAL_CHARACTER_SOURCE",
+      "value": ",",
+      "type": "Literal values",
+      "description": "Determines the decimal character used in the source."
+    },
+    {
+      "name": "NUMERIC_DECIMAL_CHARACTER_TARGET",
+      "value": ",",
+      "type": "Literal values",
+      "description": "Determines the decimal character used in the target."
+    },
+    {
+      "name": "GENERATE_LOGGING",
+      "value": "N",
+      "type": "General parameters",
+      "description": "Indicates whether to generate logging for the cloud application. (Warning: this will slow everything down.)"
+    },
+    {
+      "name": "SOURCE_RECORD_TYPE",
+      "value": "S",
+      "type": "Literal values",
+      "description": "Determines the value for the RECORD_TYPE attribute to identify source records."
+    },
+    {
+      "name": "RECORD_TYPE",
+      "value": "RECORD_TYPE",
+      "type": "Attribute names",
+      "description": "The name of the column which contains the record type."
+    },
+    {
+      "name": "NULL_RECORD_TYPE",
+      "value": "N",
+      "type": "Literal values",
+      "description": "Determines the value for the RECORD_TYPE attribute to identify the null record."
+    },
+    {
+      "name": "EMPTYSTRING_IS_NULL",
+      "value": "N",
+      "type": "General parameters",
+      "description": "Determines whether an empty string is the same as NULL (not for ORACLE)."
+    },
+    {
+      "name": "BK_CASE_INSENSITIVE_COMPARISON",
+      "value": "Y",
+      "type": "Data quality",
+      "description": "Indicates whether all business key attributes for a HUB are converted to uppercase before hash difference calculation. This can eliminate case-related problems in key attributes. If set to N, all attributes are kept in the exact case as the source system."
+    },
+    {
+      "name": "SCHEMA_MTD",
+      "value": "PROJECT_MTD",
+      "type": "Schema names",
+      "description": "The name of the schema for the metadata tables.This parameter supports templating, when creating a source, the string \"PROJECT\" will be replaced by the source name. For Snowflake/Databricks/Microsoft Fabric targets Database\\Catalog name can be included into schema definition separating them by dot eg. 'database.schema'."
+    },
+    {
+      "name": "LOAD_CYCLE_INFO_TABLE_NAME",
+      "value": "LOAD_CYCLE_INFO",
+      "type": "Object names",
+      "description": "The name of the table containing information about the load cycle."
+    },
+    {
+      "name": "SCHEMA_DTVR",
+      "value": "PROJECT_DTVR",
+      "type": "Schema names",
+      "description": "The name of the remote schema for the Delta Layer (only used when REMOTE_JOURNALING_TABLES is Y).This parameter supports templating, when creating a source, the string \"PROJECT\" will be replaced by the source name. For Snowflake/Databricks/Microsoft Fabric targets Database\\Catalog name can be included into schema definition separating them by dot eg. 'database.schema'."
+    },
+    {
+      "name": "SCHEMA_MTDR",
+      "value": "PROJECT_MTDR",
+      "type": "Schema names",
+      "description": "The name of the remote schema for the metadata tables (only used when REMOTE_JOURNALING_TABLES is Y).This parameter supports templating, when creating a source, the string \"PROJECT\" will be replaced by the source name. For Snowflake/Databricks/Microsoft Fabric targets Database\\Catalog name can be included into schema definition separating them by dot eg. 'database.schema'."
+    },
+    {
+      "name": "SCHEMA_DFV",
+      "value": "PROJECT_DFV",
+      "type": "Schema names",
+      "description": "The name of the schema for the Delta Firewall Layer.This parameter supports templating, when creating a source, the string \"PROJECT\" will be replaced by the source name. For Snowflake/Databricks/Microsoft Fabric targets Database\\Catalog name can be included into schema definition separating them by dot eg. 'database.schema'."
+    },
+    {
+      "name": "SCHEMA_DTV",
+      "value": "PROJECT_DTV",
+      "type": "Schema names",
+      "description": "The name of the schema for the Delta Layer.This parameter supports templating, when creating a source, the string \"PROJECT\" will be replaced by the source name. For Snowflake/Databricks/Microsoft Fabric targets Database\\Catalog name can be included into schema definition separating them by dot eg. 'database.schema'."
+    },
+    {
+      "name": "DFV_TABLE_SUFFIX",
+      "value": null,
+      "type": "Object names",
+      "description": "Suffix for the delta firewall view."
+    },
+    {
+      "name": "DFV_TABLE_PREFIX",
+      "value": "VW",
+      "type": "Object names",
+      "description": "Prefix of the delta firewall view."
+    },
+    {
+      "name": "MTD_EXCEPTION_RECORDS_TABLE_NAME",
+      "value": "MTD_EXCEPTION_RECORDS",
+      "type": "Object names",
+      "description": "The name of the table containing the exception records."
+    },
+    {
+      "name": "UNKNOWN_RECORD_TYPE",
+      "value": "U",
+      "type": "Literal values",
+      "description": "Determines the value for the RECORD_TYPE attribute to identify unknown records."
+    },
+    {
+      "name": "ATTR_CASE_INSENSITIVE_COMPARISON",
+      "value": "N",
+      "type": "Data quality",
+      "description": "Indicates whether all attributes inside a SAT are converted to uppercase before hash difference calculation. This can eliminate case-related problems when determining whether record values have changed."
+    },
+    {
+      "name": "INSERT_ONLY_LOGIC",
+      "value": "Y",
+      "type": "Important parameters",
+      "description": "Indicates whether to implement insert only logic as defined by Data Vault 2.0 logic."
+    },
+    {
+      "name": "ADD_SOURCE_VIEWS",
+      "value": "N",
+      "type": "General parameters",
+      "description": "Indicates whether views are loaded from the source, along with the tables."
+    },
+    {
+      "name": "LOAD_TIMESTAMP_WITH_TZ",
+      "value": "N",
+      "type": "Important parameters",
+      "description": "Indicates whether timestamps with timezone are used for load timestamps."
+    },
+    {
+      "name": "CDC_TIMESTAMP_WITH_TZ",
+      "value": "N",
+      "type": "Important parameters",
+      "description": "Indicates whether timestamps with timezone are used for CDC timestamps."
+    },
+    {
+      "name": "CHECK_PARAMETER_NAMES",
+      "value": "Y",
+      "type": "Important parameters",
+      "description": "Indicates whether parameters should be checked for naming conflicts. Setting this parameter to N may improve the loading time of the parameter screens, but might cause errors later on, if some object and attribute names are not unique."
+    },
+    {
+      "name": "FMC_LOADING_WINDOW_TABLE_NAME",
+      "value": "FMC_LOADING_WINDOW_TABLE",
+      "type": "Object names",
+      "description": "The name of the table containing the loading window dates."
+    },
+    {
+      "name": "LENGTH_ABBREVIATED_NAMES",
+      "value": "128",
+      "type": "Important parameters",
+      "description": "Determines the maximum length of the abbreviated names of source objects and attributes. (If ORACLE_12_2_OR_HIGHER is N, the maximum length is capped at 14.)"
+    },
+    {
+      "name": "LENGTH_SHORT_NAMES",
+      "value": "128",
+      "type": "Important parameters",
+      "description": "Determines the maximum length for the short names of source objects and attributes. (If ORACLE_12_2_OR_HIGHER is N then the maximum length is capped at 4.)"
+    },
+    {
+      "name": "POSTGRES_9_OR_HIGHER",
+      "value": "Y",
+      "type": "Important parameters",
+      "description": "Indicates whether PostgreSQL version is 9 or higher."
+    },
+    {
+      "name": "REF_TABLE_SUFFIX",
+      "value": null,
+      "type": "Object names",
+      "description": "Suffix of the names of the Reference tables."
+    },
+    {
+      "name": "REF_TABLE_PREFIX",
+      "value": "REF",
+      "type": "Object names",
+      "description": "Prefix of the names of the Reference tables."
+    },
+    {
+      "name": "ORACLE_12_2_OR_HIGHER",
+      "value": "Y",
+      "type": "Important parameters",
+      "description": "Indicates whether Oracle version is 12c Release 2 or higher. When working with older versions of Oracle, the object and attribute names have to be limited in length. (Leave this on Y for other database types.)"
+    },
+    {
+      "name": "FMC_BEGIN_LW_TIMESTAMP",
+      "value": "FMC_BEGIN_LW_TIMESTAMP",
+      "type": "Attribute names",
+      "description": "The name of the column used to store the begin loading window timestamp for the FMC."
+    },
+    {
+      "name": "FMC_END_LW_TIMESTAMP",
+      "value": "FMC_END_LW_TIMESTAMP",
+      "type": "Attribute names",
+      "description": "The name of the column used to store the end loading window timestamp for the FMC."
+    },
+    {
+      "name": "CLOSE_DELETED_RECORDS",
+      "value": "N",
+      "type": "General parameters",
+      "description": "If a record gets deleted, set the end date to the cdc timestamp of the delete instead of the CURRENT_RECORD_LOAD_END_DATE. Warning, this means that when a deleted record is added again, the history wont be accurate (there will be a gap in the history between the delete and the insert). This parameter has no effect when INSERT_ONLY_LOGIC = Y or INSERT_ON_DELETE = Y."
+    },
+    {
+      "name": "TRIM_SPACES_FROM_BUSINESS_KEY",
+      "value": "Y",
+      "type": "General parameters",
+      "description": "Indicates whether spaces are trimmed from the business keys."
+    },
+    {
+      "name": "FMC_GENERATE_SRC_LOADING_SCRIPTS",
+      "value": "Y",
+      "type": "FMC parameters",
+      "description": "Indicates whether scripts are generated for the FMC that load the data from the source to the Data Warehouse INI and CDC tables."
+    },
+    {
+      "name": "HASHDIFF_NULL_REPLACEMENT",
+      "value": "~",
+      "type": "Hash parameters",
+      "description": "Determines the value that is used to replace null values in the hash difference calculation. (Has to be a single character, since it is used with the trim function.)"
+    },
+    {
+      "name": "FMC_BATCH_SIZE",
+      "value": "1000",
+      "type": "FMC parameters",
+      "description": "Determines the number of records that are loaded at the same time by the loading scripts in the FMC. Value depends on the available memory of the FMC workers(this parameter will be saved in a json file to import as an airflow variable and can be adjusted in airflow later)."
+    },
+    {
+      "name": "CREATE_INI_TABLES",
+      "value": "Y",
+      "type": "General parameters",
+      "description": "Whether or not the CDC and ini tables are created in the DDL scripts."
+    },
+    {
+      "name": "SCHEMA_PL_PROCEDURES",
+      "value": "PROJECT_PL_PROC",
+      "type": "FMC parameters",
+      "description": "Schema where the procedures for loading the Presentation Layer(PL) are stored.This parameter supports templating, when creating a project, the string \"PROJECT\" will be replaced by the project name."
+    },
+    {
+      "name": "SOURCE_BV_DEP",
+      "value": "Y",
+      "type": "FMC parameters",
+      "description": "Whether the Business Vault Layer(BV) load can only run if the Raw Vault (FL) load for this source was successful or if it is also allowed to run if the load for this source failed."
+    },
+    {
+      "name": "USE_FMC",
+      "value": "Y",
+      "type": "FMC parameters",
+      "description": "Whether or not to use FMC (only available if the FMC is purchased)"
+    },
+    {
+      "name": "FMC_LOADING_HIST_TABLE_NAME",
+      "value": "FMC_LOADING_HISTORY",
+      "type": "Object names",
+      "description": "Table that stores the history of all executed loads of the FL with the FMC"
+    },
+    {
+      "name": "FMC_DYNAMIC_LOADING_WINDOW",
+      "value": "Y",
+      "type": "FMC parameters",
+      "description": "Whether the begin of the loading window is determined by the end of the last successful run or whether the load will have a static loading window but will wait for the successful execution of the previous run."
+    },
+    {
+      "name": "CDC_UPDATE_RECORD_ALL_ATTRIBUTES",
+      "value": "Y",
+      "type": "CDC parameters",
+      "description": "Indicates whether the CDC system delivers all attributes of an updated record or only the changed attributes."
+    },
+    {
+      "name": "CDC_PRE_POST_IMAGE_FLAG",
+      "value": "CDC_PRE_POST_IMAGE_FLAG",
+      "type": "Attribute names",
+      "description": "This field indicates if the incoming record represents the pre-image or postimage of a new source record."
+    },
+    {
+      "name": "CDC_PRE_POST_IMAGE_UNIQUE_KEY",
+      "value": "CDC_PRE_POST_IMAGE_UNIQUE_KEY",
+      "type": "Attribute names",
+      "description": "This field contains the unique identifier needed to link the pre- and post-image from the CDC-system to each other."
+    },
+    {
+      "name": "CDC_PRE_IMAGE_FLAG_VALUE",
+      "value": "PRE",
+      "type": "Literal values",
+      "description": "When the CDC_PRE_POST_IMAGE_FLAG attribute contains this value then the record is the pre-image."
+    },
+    {
+      "name": "CDC_POST_IMAGE_FLAG_VALUE",
+      "value": "POST",
+      "type": "Literal values",
+      "description": "When the CDC_PRE_POST_IMAGE_FLAG attribute contains this value then the record is the post-image."
+    },
+    {
+      "name": "CDC_LOGPOSITION_AVAILABLE",
+      "value": "N",
+      "type": "CDC parameters",
+      "description": "Indicates whether log position data is available for the source database system."
+    },
+    {
+      "name": "CDC_LOGPOSITION",
+      "value": "CDC_LOGPOSITION",
+      "type": "Attribute names",
+      "description": "This contains the unique identifier that determines the position of the transaction in the log of the source database."
+    },
+    {
+      "name": "NO_CHANGE_INDICATION_CHAR",
+      "value": "unchanged",
+      "type": "Literal values",
+      "description": "The special value of a string based attribute used by the CDC system to indicate unchanged attributes when there is no pre-image available."
+    },
+    {
+      "name": "NO_CHANGE_INDICATION_NUMBER",
+      "value": "-1",
+      "type": "Literal values",
+      "description": "The special value of a number based attribute used by the CDC system to indicate unchanged attributes when there is no pre-image available."
+    },
+    {
+      "name": "NO_CHANGE_INDICATION_DATE",
+      "value": "01/01/1970",
+      "type": "Literal values",
+      "description": "The special value of a date based attribute used by the CDC system to indicate unchanged attributes when there is no pre-image available."
+    },
+    {
+      "name": "NO_CHANGE_INDICATION_TIME",
+      "value": "00:00:00",
+      "type": "Literal values",
+      "description": "The special value of a time based attribute used by the CDC system to indicate unchanged attributes when there is no pre-image available."
+    },
+    {
+      "name": "NO_CHANGE_INDICATION_TIMESTAMP",
+      "value": "01/01/1970 00:00:00",
+      "type": "Literal values",
+      "description": "The special value of a timestamp based attribute used by the CDC system to indicate unchanged attributes when there is no pre-image available."
+    },
+    {
+      "name": "NO_CHANGE_INDICATION_OTHER",
+      "value": "unchanged",
+      "type": "Literal values",
+      "description": "The special value of a attribute with a special data type used by the CDC system to indicate unchanged attributes when there is no pre-image available."
+    },
+    {
+      "name": "CDC_PRE_IMAGE_AVAILABLE",
+      "value": "N",
+      "type": "CDC parameters",
+      "description": "Indicates whether the CDC system also delivers the record before the change. When there is no pre-image available than the CDC-system itself has to indicate the unchanged values by putting a special value inside the attribute. These special values for all data types are configured in the literal values parameters: NO_CHANGE_INDICATION_[DATA_TYPE_GROUP]."
+    },
+    {
+      "name": "SATELLITE_RECORD_TYPE",
+      "value": "SAT",
+      "type": "Literal values",
+      "description": "Determines the value for the RECORD_TYPE attribute to identify satellite records."
+    },
+    {
+      "name": "TRANSACTION_TYPE_SATELLITE",
+      "value": "SAT",
+      "type": "Literal values",
+      "description": "Determines the value for the transaction type attribute to identify satellite transaction types."
+    },
+    {
+      "name": "USE_OBJ_SRC_NAME_FOR_INI_CDC_TABLES",
+      "value": "Y",
+      "type": "CDC parameters",
+      "description": "Use the original name of the table in the source for the initial and cdc tables."
+    },
+    {
+      "name": "USE_REMOTE_CDC_DBLINK",
+      "value": "N",
+      "type": "CDC parameters",
+      "description": "Whether to use a database link in the mapping to connect to the remote CDC schema."
+    },
+    {
+      "name": "CREATE_REMOTE_DELTA_VIEW",
+      "value": "N",
+      "type": "CDC parameters",
+      "description": "Whether to create a loading window table in the source and views on the source cdc tables to filter out the records inside the current loading window. If N then the FMC will filter those records when transferring the data to the DV."
+    },
+    {
+      "name": "USE_LCI_TIMESTAMP_FOR_INITIAL_LOAD",
+      "value": "Y",
+      "type": "CDC parameters",
+      "description": "Use the timestamp of the Load_cycle_info table for the initial load, otherwise the current_timestamp will be used."
+    },
+    {
+      "name": "AGENT_PATH",
+      "value": "/",
+      "type": "General parameters",
+      "description": "The location where the agent resides at the customer."
+    },
+    {
+      "name": "GENERATE_FOREIGN_KEYS",
+      "value": "Y",
+      "type": "General parameters",
+      "description": "If set to N then no foreign keys will be generated. This is mainly useful if you are generating for PostgreSQL and are not a superuser (this is the case for many cloud platforms), because then you cannot disable the keys. This does not impact performance!"
+    },
+    {
+      "name": "DELETE_FLAG_POSITIVE_VALUE",
+      "value": "Y",
+      "type": "Literal values",
+      "description": "The positive value of the column in the SATs used to indicate whether a record was deleted in the source system"
+    },
+    {
+      "name": "DELETE_FLAG_NEGATIVE_VALUE",
+      "value": "N",
+      "type": "Literal values",
+      "description": "The negative value of the column in the SATs used to indicate whether a record was deleted in the source system."
+    },
+    {
+      "name": "HASH_STORE_IN_BINARY",
+      "value": "N",
+      "type": "Hash parameters",
+      "description": "Indicates whether the hashkey and hashdiff fields should be stored in a binary format. This can improve the performance and reduce the storage. If set to N, then they will be stored as hexadecimal character representation."
+    },
+    {
+      "name": "FMC_OVERLAPPING_LOADING_WINDOWS",
+      "value": "N",
+      "type": "FMC parameters",
+      "description": "Determines whether an overlap will be added to the loading windows in the FMC, the size of the overlap is given by the \"window_overlap\" parameter in Airflow."
+    },
+    {
+      "name": "PIT_TABLE_PREFIX",
+      "value": "PIT",
+      "type": "Object names",
+      "description": "Prefix of the names of the PIT tables."
+    },
+    {
+      "name": "PIT_TABLE_SUFFIX",
+      "value": null,
+      "type": "Object names",
+      "description": "Suffix of the names of the PIT tables."
+    },
+    {
+      "name": "SNAPSHOT_TIMESTAMP",
+      "value": "SNAPSHOT_TIMESTAMP",
+      "type": "Attribute names",
+      "description": "The name of the column that stores the snapshot date in the PIT tables."
+    },
+    {
+      "name": "FMC_BV_LOADING_WINDOW_TABLE_NAME",
+      "value": "FMC_BV_LOADING_WINDOW_TABLE",
+      "type": "Object names",
+      "description": "The name of the table containing the BV loading window dates."
+    },
+    {
+      "name": "STORE_TEMP_IN_STAGING",
+      "value": "N",
+      "type": "Important parameters",
+      "description": "Indicates whether temporary storage tables should be placed in the Staging layer. If set to N, then they will be stored in the Data Vault Layer."
+    },
+    {
+      "name": "UPDATE_LOAD_CYCLE_ID_ON_UPDATE_DELETE",
+      "value": "N",
+      "type": "General parameters",
+      "description": "In the satellite when a record is updated or deleted and insert_only_logic = N, the load_cycle_id is updated."
+    },
+    {
+      "name": "BRIDGE_TABLE_PREFIX",
+      "value": "BRIDGE",
+      "type": "Object names",
+      "description": "Prefix of the names of the Bridge tables."
+    },
+    {
+      "name": "BRIDGE_TABLE_SUFFIX",
+      "value": null,
+      "type": "Object names",
+      "description": "Suffix of the names of the Bridge tables."
+    },
+    {
+      "name": "CAST_SOURCE_ATTRIBUTES",
+      "value": "N",
+      "type": "Data quality",
+      "description": "When the data type of source table columns are text fields, castings to the correct data_type will be performed while loading into the data vault. If also data type checks need to be performed, set DATA_QUALITY_BAD to Y"
+    },
+    {
+      "name": "STORE_HUB_HASH_KEYS_IN_LINK_SAT",
+      "value": "N",
+      "type": "General parameters",
+      "description": "Store the Hash keys of the hubs in the satellites of links."
+    },
+    {
+      "name": "INSERT_ON_DELETE",
+      "value": "Y",
+      "type": "General parameters",
+      "description": "Enabling this will insert a new record in the satellite for deletes instead of updating a delete flag, this is needed for filtering out duplicate deletes in the firewall, since this logic retains the transaction timestamp of the delete."
+    },
+    {
+      "name": "LNA_TABLE_PREFIX",
+      "value": "LNA",
+      "type": "Object names",
+      "description": "Prefix of the names of the Link Across Source tables."
+    },
+    {
+      "name": "LNA_TABLE_SUFFIX",
+      "value": null,
+      "type": "Object names",
+      "description": "Suffix of the names of the Link Across Source tables."
+    },
+    {
+      "name": "LAS_TABLE_PREFIX",
+      "value": "LAS",
+      "type": "Object names",
+      "description": "Prefix of the names of the Satellite on Link Across Source tables."
+    },
+    {
+      "name": "LAS_TABLE_SUFFIX",
+      "value": null,
+      "type": "Object names",
+      "description": "Suffix of the names of the Satellite on Link Across Source tables."
+    },
+    {
+      "name": "LNA_HASH_KEY_PREFIX",
+      "value": "LNA",
+      "type": "Attribute names",
+      "description": "Prefix of the names of the Hash Key columns of the Link Across Source tables."
+    },
+    {
+      "name": "LNA_HASH_KEY_SUFFIX",
+      "value": "HKEY",
+      "type": "Attribute names",
+      "description": "Suffix of the names of the Hash Key columns of the Link Across Source tables."
+    },
+    {
+      "name": "GENERATE_PRIMARY_UNIQUE_KEYS",
+      "value": "Y",
+      "type": "General parameters",
+      "description": "If set to N then no primary keys, unique keys or indexes will be generated. This is mainly useful if you are generating for Greenplum."
+    },
+    {
+      "name": "ERROR_CODE",
+      "value": "ERROR_CODE",
+      "type": "Attribute names",
+      "description": "The name of the column which contains the error code"
+    },
+    {
+      "name": "ERR_TABLE_PREFIX",
+      "value": null,
+      "type": "Object names",
+      "description": "Error table prefix"
+    },
+    {
+      "name": "ERR_TABLE_SUFFIX",
+      "value": "ERR",
+      "type": "Object names",
+      "description": "Error table suffix"
+    },
+    {
+      "name": "REFERENTIAL_INTEGRITY_VALIDATED",
+      "value": "N",
+      "type": "Important parameters",
+      "description": "Validate referential integrity of Link records and write these records to an error logging table in case of a violation. Link records will only be loaded once the reference is validated, unless REFERENTIAL_INTEGRITY_FORCE_LINK_LOAD is enabled."
+    },
+    {
+      "name": "REFERENTIAL_INTEGRITY_FORCE_LINK_LOAD",
+      "value": "N",
+      "type": "Important parameters",
+      "description": "Forces the load of Link records that violate the referential integrity. The records that have no parent record will get an unknown value. When the reference gets resolved the correct link record will be loaded as an update."
+    },
+    {
+      "name": "SUBSEQUENCE_PREFIX",
+      "value": null,
+      "type": "Attribute names",
+      "description": "Subsequence source attribute prefix for multi-active satellite"
+    },
+    {
+      "name": "SUBSEQUENCE_SUFFIX",
+      "value": "SEQ",
+      "type": "Attribute names",
+      "description": "Subsequence source attribute suffix for multi-active satellite"
+    },
+    {
+      "name": "NHL_HASH_KEY_PREFIX",
+      "value": "NHL",
+      "type": "Attribute names",
+      "description": "Prefix of the names of the Hash Key columns for the Non-Historized Link tables."
+    },
+    {
+      "name": "NHL_HASH_KEY_SUFFIX",
+      "value": "HKEY",
+      "type": "Attribute names",
+      "description": "Suffix of the names of the Hash Key columns for the Non-Historized Link tables."
+    },
+    {
+      "name": "GENERATE_SCHEMA_DEFINITIONS",
+      "value": "Y",
+      "type": "General parameters",
+      "description": "Generate a DDL script with create schema statements."
+    },
+    {
+      "name": "USE_IDENTIFIER_PREFIXES",
+      "value": "Y",
+      "type": "Object names",
+      "description": "If this parameter = Y, the short name of the sources and the pit names will be added to the full name just behind the tab type prefix, otherwise it will be added just before the tab type suffix."
+    },
+    {
+      "name": "FMC_TYPE",
+      "value": "Airflow",
+      "type": "FMC parameters",
+      "description": "Defines the type of FMC used, Apache Airflow or Azure Data Factory."
+    },
+    {
+      "name": "DATA_ORDER",
+      "value": "DUMMY",
+      "type": "Temporary Attribute Names",
+      "description": "Temporary integer attribute that is used for calculating orders in the templates."
+    },
+    {
+      "name": "SNAPSHOT_TS",
+      "value": "SNAPSHOT_TS",
+      "type": "Temporary Attribute Names",
+      "description": "Temporary timestamp attribute in the pit templates to store the SNAPSHOT_TIMESTAMP for seperate Satellites."
+    },
+    {
+      "name": "MIN_LOAD_TIMESTAMP",
+      "value": "MIN_LOAD_TIMESTAMP",
+      "type": "Temporary Attribute Names",
+      "description": "Temporary timestamp attribute in the templates to store the minimum for the load timestamp attribute."
+    },
+    {
+      "name": "MAX_LOAD_TIMESTAMP",
+      "value": "MAX_LOAD_TIMESTAMP",
+      "type": "Temporary Attribute Names",
+      "description": "Temporary timestamp attribute in the templates to store the maximum for the load timestamp attribute."
+    },
+    {
+      "name": "ORIGIN_ID",
+      "value": "ORIGIN_ID",
+      "type": "Temporary Attribute Names",
+      "description": "Temporary integer attribute in the templates to store the origin of a record."
+    },
+    {
+      "name": "END_INTERVAL",
+      "value": "END_INTERVAL",
+      "type": "Temporary Attribute Names",
+      "description": "Temporary timestamp attribute in the templates to store the end of the interval."
+    },
+    {
+      "name": "GENERAL_ORDER",
+      "value": "GENERAL_ORDER",
+      "type": "Temporary Attribute Names",
+      "description": "Temporary integer attribute in the templates to store the order for data."
+    },
+    {
+      "name": "ADD_RECORD_SOURCE_ATTRIBUTE",
+      "value": "N",
+      "type": "Important parameters",
+      "description": "Enabling this will add an extra record source attribute to the hub - link - reference objects."
+    },
+    {
+      "name": "RECORD_SOURCE",
+      "value": "RECORD_SOURCE",
+      "type": "Attribute names",
+      "description": "The name of the column that stores the record source in the HUB."
+    },
+    {
+      "name": "RECORD_SOURCE_VALUE_TEMPLATE",
+      "value": "<record_src_name>.<table_abbreviated_name>",
+      "type": "Literal values",
+      "description": "The template how to store the record source, this can be done by a template or by hardcoding a string.\n The templates should always be lower case like seen in the next list:\n Possible templates for the source: <record_src_name> (default)\n Possible templates for objects: <table_name> or <table_short_name> or <table_abbreviated_name>(default)"
+    },
+    {
+      "name": "FMC_WINDOW_OVERLAP_SIZE",
+      "value": "15",
+      "type": "FMC parameters",
+      "description": "The interval size for the overlap between loading windows, example result: \"timestamp_attribute -FMC_WINDOW_OVERLAP_SIZE * interval'1 FMC_WINDOW_OVERLAP_TYPE'\". Only used if FMC_OVERLAPPING_LOADING_WINDOWS is Y."
+    },
+    {
+      "name": "FMC_WINDOW_OVERLAP_TYPE",
+      "value": "minute",
+      "type": "FMC parameters",
+      "description": "The interval type for the overlap between loading windows, example result: \"timestamp_attribute -FMC_WINDOW_OVERLAP_SIZE * interval'1 FMC_WINDOW_OVERLAP_TYPE'\". Only used if FMC_OVERLAPPING_LOADING_WINDOWS is Y."
+    },
+    {
+      "name": "CREATE_CDC_TABLES",
+      "value": "Y",
+      "type": "General parameters",
+      "description": "Whether or not the CDC and ini tables are created in the DDL scripts."
+    },
+    {
+      "name": "SUBSEQUENCE_SEQ",
+      "value": "SUBSEQUENCE_SEQ",
+      "type": "Object names",
+      "description": "Subsequence column name for multi active satellites without subsequence attributes"
+    },
+    {
+      "name": "AGG_HASH_DIFF",
+      "value": "AGG_HASH_DIFF",
+      "type": "Temporary Attribute Names",
+      "description": "Temporary attribute used to store aggregated hash diff for the multi active satellites without subsequence attributes logic."
+    },
+    {
+      "name": "COUNT_MULTI_ACTIVE",
+      "value": "COUNT_MULTI_ACTIVE",
+      "type": "Temporary Attribute Names",
+      "description": "Temporary attribute used to store the number of records per key for the multi active satellites without subsequence attributes logic."
+    },
+    {
+      "name": "CAST_BINARY_TO_HEX",
+      "value": "Y",
+      "type": "Important parameters",
+      "description": "When converting a binary value to a string, use the hex approach to have the same result across technologies."
+    },
+    {
+      "name": "STREAMING_SOURCE",
+      "value": "N",
+      "type": "Important parameters",
+      "description": "Enables the source data to be streamed to the target using Spark structured streaming instead of using batch loading. This requires the source data to be delivered through Kafka. The source can be either a native Kafka source or incremental data from a different source type (file or Database) being streamed into Kafka e.g. by a CDC system."
+    },
+    {
+      "name": "WATER_MARK_SIZE",
+      "value": "120",
+      "type": "Important parameters",
+      "description": "Watermarking is a feature in Spark Structured Streaming that is used to handle the data that arrives late. It will postpone processing of incoming data so that referential integrity issues could be resolved."
+    },
+    {
+      "name": "ERROR_RECORD_RETENTION_TIME",
+      "value": "120",
+      "type": "Important parameters",
+      "description": "Error record retention time for Spark structural streaming in seconds. Will be used to persist referential integrity error records."
+    },
+    {
+      "name": "STREAMING_EXT_TABLE_PREFIX",
+      "value": "EXT",
+      "type": "Object names",
+      "description": "Spark streaming extraction late table prefix. Will be used for resolving referential integrity issues."
+    },
+    {
+      "name": "STREAMING_EXT_TABLE_SUFFIX",
+      "value": "LATE",
+      "type": "Object names",
+      "description": "Spark streaming extraction late table suffix. Will be used for resolving referential integrity issues."
+    },
+    {
+      "name": "STREAMING_STG_TABLE_PREFIX",
+      "value": "STG",
+      "type": "Object names",
+      "description": "Spark streaming staging table prefix. Will be used for resolving referential integrity issues."
+    },
+    {
+      "name": "STREAMING_STG_TABLE_SUFFIX",
+      "value": "FIX",
+      "type": "Object names",
+      "description": "Spark streaming staging table suffix. Will be used for resolving referential integrity issues."
+    },
+    {
+      "name": "OBJECT_SPECIFIC_LOADING_WINDOW",
+      "value": "N",
+      "type": "FMC parameters",
+      "description": "When set to Y, the loading window will be defined separately for each source object instead of having one window per source."
+    },
+    {
+      "name": "CDC_BASED_LOADING_WINDOW",
+      "value": "N",
+      "type": "FMC parameters",
+      "description": "When set to Y, the FMC will base the end of the loading window on the maximum CDC timestamp in the landing table of a specific object. This means that all new CDC records since the previous load will be ingested each load, provided that they arrive in chronological order."
+    },
+    {
+      "name": "OBJECT_NAME",
+      "value": "OBJECT_NAME",
+      "type": "Attribute names",
+      "description": "The name of the column that stores the source object name in the FMC metadata tables, used with OBJECT_SPECIFIC_LOADING_WINDOW."
+    },
+    {
+      "name": "FMC_OBJECT_LOADING_HIST_TABLE_NAME",
+      "value": "FMC_OBJECT_LOADING_HISTORY",
+      "type": "Object names",
+      "description": "Table that stores the history for a specific object of all executed loads of the FL with the FMC"
+    },
+    {
+      "name": "SCHEMA_INI_R",
+      "value": "PROJECT",
+      "type": "Schema names",
+      "description": "The name of the remote schema for the initial load tables. This is the schema used to retrieve the initial load data when source loading through the FMC is enabled. This parameter supports templating, when creating a source, the string \"PROJECT\" will be replaced by the source name. For Snowflake/Databricks/Microsoft Fabric targets Database\\Catalog name can be included into schema definition separating them by dot eg. 'database.schema'."
+    },
+    {
+      "name": "SCHEMA_CDC_KAFKA",
+      "value": "PROJECT_CDC_KAFKA",
+      "type": "Schema names",
+      "description": "The name of the schema for the incremental streaming load tables. For Snowflake/Databricks/Microsoft Fabric targets Database\\Catalog name can be included into schema definition separating them by dot eg. 'database.schema'."
+    },
+    {
+      "name": "CDC_SEQUENCE",
+      "value": "CDC_SEQUENCE",
+      "type": "Attribute names",
+      "description": "The name of the column used to store the sequence number of the changes detected in the source system."
+    },
+    {
+      "name": "FMC_BEGIN_LW_SEQUENCE",
+      "value": "FMC_BEGIN_LW_SEQUENCE",
+      "type": "Attribute names",
+      "description": "The name of the column used to store the begin loading window number for the FMC."
+    },
+    {
+      "name": "FMC_END_LW_SEQUENCE",
+      "value": "FMC_END_LW_SEQUENCE",
+      "type": "Attribute names",
+      "description": "The name of the column used to store the end loading window number for the FMC."
+    },
+    {
+      "name": "FMC_FILE_EXTENSION",
+      "value": ".SQL",
+      "type": "FMC parameters",
+      "description": "Databricks file extension (If the generated mappings are deployed to Databricks directly, then this should be left on the default value(.sql). If the mappings are deployed to GIT and imported into Databricks through the GIT integration, then it should be set to an empty string)."
+    },
+    {
+      "name": "ADD_RECORD_TRACKING_SATELLITE",
+      "value": "N",
+      "type": "CDC parameters",
+      "description": "Adds record tracking satellite"
+    },
+    {
+      "name": "EXISTS_FLAG_POSITIVE_VALUE",
+      "value": "Y",
+      "type": "Literal values",
+      "description": "Positive value of column in RTSs used to indicate if a records existed in source system"
+    },
+    {
+      "name": "EXISTS_FLAG_NEGATIVE_VALUE",
+      "value": "N",
+      "type": "Literal values",
+      "description": "Negative value of column in RTSs used to indicate if a records existed in source system"
+    },
+    {
+      "name": "RTS_TABLE_PREFIX",
+      "value": "RTS",
+      "type": "Object names",
+      "description": "Prefix of the names of the Record Tracking Satellite tables"
+    },
+    {
+      "name": "RTS_TABLE_SUFFIX",
+      "value": null,
+      "type": "Object names",
+      "description": "Suffix of the names of the Record Tracking Satellite tables"
+    },
+    {
+      "name": "EXISTS_FLAG",
+      "value": "EXISTS_FLAG",
+      "type": "Attribute names",
+      "description": "Exists flag column name for record tracking satellites"
+    },
+    {
+      "name": "SK_SUFFIX",
+      "value": "SK",
+      "type": "Attribute names",
+      "description": "Suffix of the names of the Shard Key constrains of all generated tables."
+    },
+    {
+      "name": "SK_PREFIX",
+      "value": null,
+      "type": "Attribute names",
+      "description": "Prefix of the names of the Shard Key constrains of all generated tables."
+    },
+    {
+      "name": "STG_TABLE_CURR_PREFIX",
+      "value": null,
+      "type": "Object names",
+      "description": "This parameter contains the prefix that will be added to the name of the staging table for current dataset storage copy. Specific for Full Load and Full Load using Modification Date/Sequence with Delete Management."
+    },
+    {
+      "name": "STG_TABLE_CURR_SUFFIX",
+      "value": "CURR",
+      "type": "Object names",
+      "description": "This parameter contains the suffix that will be added to the name of the staging table for current dataset storage copy. Specific for Full Load and Full Load using Modification Date/Sequence with Delete Management."
+    },
+    {
+      "name": "STG_TABLE_PREV_PREFIX",
+      "value": null,
+      "type": "Object names",
+      "description": "This parameter contains the suffix that will be added to the name of the staging table for previous dataset storage copy. Specific for Full Load and Full Load using Modification Date/Sequence with Delete Management."
+    },
+    {
+      "name": "STG_TABLE_PREV_SUFFIX",
+      "value": "PREV",
+      "type": "Object names",
+      "description": "This parameter contains the suffix that will be added to the name of the staging table for previous dataset storage copy. Specific for Full Load and Full Load using Modification Date/Sequence with Delete Management."
+    },
+    {
+      "name": "ADD_NH_COUNTER_RECORD_DELETE",
+      "value": "N",
+      "type": "CDC parameters",
+      "description": "Adds a COUNTER attribute to a non-historic object. It shows whether the record is deleted from a source system or not"
+    },
+    {
+      "name": "NH_COUNTER_POSITIVE_VALUE",
+      "value": "1",
+      "type": "Literal values",
+      "description": "Positive value of a column in a non-historic object used to indicate if a record exists in a source system"
+    },
+    {
+      "name": "NH_COUNTER_NEGATIVE_VALUE",
+      "value": "-1",
+      "type": "Literal values",
+      "description": "Negative value of a column in a non-historic object used to indicate if a record exists in a source system"
+    },
+    {
+      "name": "NH_COUNTER",
+      "value": "COUNTER",
+      "type": "Attribute names",
+      "description": "COUNTER attribute name of a non-historic object"
+    },
+    {
+      "name": "USE_ORIGINAL_SOURCE_TABLE_NAME_FOR_INI_CDC_OBJECTS",
+      "value": "N",
+      "type": "CDC parameters",
+      "description": "When mapping a (dropped) object to a new incoming object, keep using the old source table name instead of the new source table name for CDC and INI objects."
+    },
+    {
+      "name": "CONVERT_FMC_TIMEZONE",
+      "value": "N",
+      "type": "FMC parameters",
+      "description": "Indicates whether FMC timezone should be converted to the target database timezone."
+    },
+    {
+      "name": "TARGET_TIMEZONE",
+      "value": "UTC",
+      "type": "FMC parameters",
+      "description": "The timezone of the target database. It must be in the correct format for your target technology."
+    },
+    {
+      "name": "FMC_TIMEZONE",
+      "value": "UTC",
+      "type": "FMC parameters",
+      "description": "The timezone of the FMC server."
+    },
+    {
+      "name": "CONVERT_SOURCE_TIMEZONE",
+      "value": "N",
+      "type": "FMC parameters",
+      "description": "Indicates whether source timezone is different from the target database timezone. This is used only for source loading window calculation."
+    },
+    {
+      "name": "SOURCE_TIMEZONE",
+      "value": "UTC",
+      "type": "FMC parameters",
+      "description": "The timezone of the source."
+    },
+    {
+      "name": "DETECT_UPDATES_INSERTS_ON_FULL_LOAD",
+      "value": "Y",
+      "type": "General parameters",
+      "description": "This parameter allows to disable column by column comparison to detect updates on Full Load with Delete Management"
+    },
+    {
+      "name": "CDC_TIMESTAMP_FORMAT_MASK",
+      "value": null,
+      "type": "CDC parameters",
+      "description": "This parameter allows to define cast format mask separately for cdc timestamp column."
+    },
+    {
+      "name": "CAST_VS_MANAGED_ATTRIBUTES",
+      "value": "Y",
+      "type": "Data quality",
+      "description": "This parameter allows to disable cdc_timestamp/cdc_sequence column casting when CAST_SOURCE_ATTRIBUTES = Y"
+    },
+    {
+      "name": "DELTA_GENERATE_INIT_MAPPINGS",
+      "value": "changed",
+      "type": "General parameters",
+      "description": "Indicates which initial load mappings should be generated in a delta generation: only mappings for new objects, only for changed objects(default), or all mappings(full generation)"
+    },
+    {
+      "name": "DELTA_GENERATE_INCR_MAPPINGS",
+      "value": "changed",
+      "type": "General parameters",
+      "description": "Indicates which incremental load mappings should be generated in a delta generation: only mappings for new objects, only for changed objects(default), or all mappings(full generation)"
+    },
+    {
+      "name": "MAX_BUSINESS_KEY_LENGTH",
+      "value": "1500",
+      "type": "Important parameters",
+      "description": "Defines maximum length of the concatenated business key. Default value is null (MAX) characters."
+    }
+  ]
+}

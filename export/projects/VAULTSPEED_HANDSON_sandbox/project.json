@@ -1,0 +1,899 @@
+{
+  "original_name": "VAULTSPEED_HANDSON",
+  "name": "VAULTSPEED_HANDSON_sandbox",
+  "description": "hand-on project for wwdvc demo",
+  "parameters": [
+    {
+      "name": "BK_PREFIX",
+      "value": null
+    },
+    {
+      "name": "BK_SUFFIX",
+      "value": "BK"
+    },
+    {
+      "name": "CDC_TIMESTAMP",
+      "value": "CDC_TIMESTAMP"
+    },
+    {
+      "name": "CDC_FLAG",
+      "value": "JRN_FLAG"
+    },
+    {
+      "name": "FK_PREFIX",
+      "value": null
+    },
+    {
+      "name": "FK_SUFFIX",
+      "value": "FK"
+    },
+    {
+      "name": "HUB_HASH_KEY_PREFIX",
+      "value": null
+    },
+    {
+      "name": "HUB_HASH_KEY_SUFFIX",
+      "value": "HKEY"
+    },
+    {
+      "name": "HUB_TABLE_PREFIX",
+      "value": "HUB"
+    },
+    {
+      "name": "HUB_TABLE_SUFFIX",
+      "value": null
+    },
+    {
+      "name": "LDS_TABLE_PREFIX",
+      "value": "LDS"
+    },
+    {
+      "name": "LND_TABLE_PREFIX",
+      "value": "LND"
+    },
+    {
+      "name": "LND_TABLE_SUFFIX",
+      "value": null
+    },
+    {
+      "name": "LNK_HASH_KEY_PREFIX",
+      "value": "LNK"
+    },
+    {
+      "name": "LNK_HASH_KEY_SUFFIX",
+      "value": "HKEY"
+    },
+    {
+      "name": "LNK_TABLE_PREFIX",
+      "value": "LNK"
+    },
+    {
+      "name": "LNK_TABLE_SUFFIX",
+      "value": null
+    },
+    {
+      "name": "LKS_TABLE_PREFIX",
+      "value": "LKS"
+    },
+    {
+      "name": "LOAD_CYCLE_ID",
+      "value": "LOAD_CYCLE_ID"
+    },
+    {
+      "name": "LOAD_TIMESTAMP",
+      "value": "LOAD_DATE"
+    },
+    {
+      "name": "LOAD_END_TIMESTAMP",
+      "value": "LOAD_END_DATE"
+    },
+    {
+      "name": "NHL_TABLE_PREFIX",
+      "value": "NHL"
+    },
+    {
+      "name": "NHL_TABLE_SUFFIX",
+      "value": null
+    },
+    {
+      "name": "PK_PREFIX",
+      "value": null
+    },
+    {
+      "name": "PK_SUFFIX",
+      "value": "PK"
+    },
+    {
+      "name": "SAT_TABLE_PREFIX",
+      "value": "SAT"
+    },
+    {
+      "name": "SAT_TABLE_SUFFIX",
+      "value": null
+    },
+    {
+      "name": "HASHKEY_ESCAPE_CHARACTER",
+      "value": "\\"
+    },
+    {
+      "name": "SRC_NAME_IN_BK",
+      "value": "SRC_BK"
+    },
+    {
+      "name": "UK_PREFIX",
+      "value": null
+    },
+    {
+      "name": "UK_SUFFIX",
+      "value": "UK"
+    },
+    {
+      "name": "USE_SOURCE_UK_AS_BK",
+      "value": "N"
+    },
+    {
+      "name": "DATA_QUALITY_BAD",
+      "value": "N"
+    },
+    {
+      "name": "HASH_DIFF",
+      "value": "HASH_DIFF"
+    },
+    {
+      "name": "CDC_RELIABLE",
+      "value": "N"
+    },
+    {
+      "name": "INTRA_LOADCYCLE_CHANGES",
+      "value": "Y"
+    },
+    {
+      "name": "HASHKEY_DELIMITER",
+      "value": "#"
+    },
+    {
+      "name": "DELETE_FLAG",
+      "value": "DELETE_FLAG"
+    },
+    {
+      "name": "LKS_TABLE_SUFFIX",
+      "value": null
+    },
+    {
+      "name": "LDS_TABLE_SUFFIX",
+      "value": null
+    },
+    {
+      "name": "LND_HASH_KEY_PREFIX",
+      "value": "LND"
+    },
+    {
+      "name": "LND_HASH_KEY_SUFFIX",
+      "value": "HKEY"
+    },
+    {
+      "name": "TEMP_TABLE_PREFIX",
+      "value": "TMP"
+    },
+    {
+      "name": "TEMP_TABLE_SUFFIX",
+      "value": "TMP"
+    },
+    {
+      "name": "TRANSACTION_TYPE_DELETE",
+      "value": "D"
+    },
+    {
+      "name": "TRANSACTION_TYPE_INSERT",
+      "value": "I"
+    },
+    {
+      "name": "CURRENT_RECORD_LOAD_END_DATE",
+      "value": "31/12/2999 23:59:59"
+    },
+    {
+      "name": "DATA_QUALITY_BAD_COLUMN_PREFIX",
+      "value": null
+    },
+    {
+      "name": "DATA_QUALITY_BAD_COLUMN_SUFFIX",
+      "value": "ORG"
+    },
+    {
+      "name": "SOURCE_IN_TEMP",
+      "value": "SOURCE"
+    },
+    {
+      "name": "EQUAL_IN_TEMP",
+      "value": "EQUAL"
+    },
+    {
+      "name": "SCHEMA_EXT",
+      "value": "PROJECT_EXT"
+    },
+    {
+      "name": "SCHEMA_STG",
+      "value": "PROJECT_STG"
+    },
+    {
+      "name": "SCHEMA_FL",
+      "value": "PROJECT_FL"
+    },
+    {
+      "name": "TRANSACTION_TYPE_UPDATE",
+      "value": "U"
+    },
+    {
+      "name": "SCHEMA_CDC",
+      "value": "PROJECT_CDC"
+    },
+    {
+      "name": "PERSIST_DELTA_FIREWALL_VIEWS",
+      "value": "N"
+    },
+    {
+      "name": "REMOTE_JOURNALING_TABLES",
+      "value": "N"
+    },
+    {
+      "name": "SCHEMA_INI",
+      "value": "PROJECT_INI"
+    },
+    {
+      "name": "SCHEMA_CDCR",
+      "value": "PROJECT_CDCR"
+    },
+    {
+      "name": "SCHEMA_BV",
+      "value": "PROJECT_BV"
+    },
+    {
+      "name": "CDC_TABLE_PREFIX",
+      "value": "CDC"
+    },
+    {
+      "name": "CDC_TABLE_SUFFIX",
+      "value": null
+    },
+    {
+      "name": "SCHEMA_PROCEDURES",
+      "value": "VAULTSPEED_HANDSON_PROC"
+    },
+    {
+      "name": "COLUMN_LENGTH_MULTIPLIER",
+      "value": "2"
+    },
+    {
+      "name": "TIME_ZONE_LOCAL",
+      "value": "Y"
+    },
+    {
+      "name": "SCHEMA_FMC",
+      "value": "VAULTSPEED_HANDSON_FMC"
+    },
+    {
+      "name": "EARLY_ARRIVING_FACTS",
+      "value": "N"
+    },
+    {
+      "name": "STORE_BK_FIELDS_IN_SAT",
+      "value": "N"
+    },
+    {
+      "name": "SCHEMA_FL_MIGRATION",
+      "value": "VAULTSPEED_HANDSON_FL"
+    },
+    {
+      "name": "REMOTE_CDC_DBLINK_NAME",
+      "value": "DB_LINK_ACCK_OBI_OWNER"
+    },
+    {
+      "name": "NUMERIC_DECIMAL_CHARACTER_SOURCE",
+      "value": ","
+    },
+    {
+      "name": "NUMERIC_DECIMAL_CHARACTER_TARGET",
+      "value": ","
+    },
+    {
+      "name": "SOURCE_RECORD_TYPE",
+      "value": "S"
+    },
+    {
+      "name": "RECORD_TYPE",
+      "value": "RECORD_TYPE"
+    },
+    {
+      "name": "NULL_RECORD_TYPE",
+      "value": "N"
+    },
+    {
+      "name": "EMPTYSTRING_IS_NULL",
+      "value": "N"
+    },
+    {
+      "name": "SCHEMA_MTD",
+      "value": "PROJECT_MTD"
+    },
+    {
+      "name": "LOAD_CYCLE_INFO_TABLE_NAME",
+      "value": "LOAD_CYCLE_INFO"
+    },
+    {
+      "name": "SCHEMA_DTVR",
+      "value": "PROJECT_DTVR"
+    },
+    {
+      "name": "SCHEMA_MTDR",
+      "value": "PROJECT_MTDR"
+    },
+    {
+      "name": "SCHEMA_DFV",
+      "value": "PROJECT_DFV"
+    },
+    {
+      "name": "SCHEMA_DTV",
+      "value": "PROJECT_DTV"
+    },
+    {
+      "name": "DFV_TABLE_SUFFIX",
+      "value": null
+    },
+    {
+      "name": "DFV_TABLE_PREFIX",
+      "value": "VW"
+    },
+    {
+      "name": "MTD_EXCEPTION_RECORDS_TABLE_NAME",
+      "value": "MTD_EXCEPTION_RECORDS"
+    },
+    {
+      "name": "UNKNOWN_RECORD_TYPE",
+      "value": "U"
+    },
+    {
+      "name": "ATTR_CASE_INSENSITIVE_COMPARISON",
+      "value": "N"
+    },
+    {
+      "name": "INSERT_ONLY_LOGIC",
+      "value": "Y"
+    },
+    {
+      "name": "ADD_SOURCE_VIEWS",
+      "value": "N"
+    },
+    {
+      "name": "LOAD_TIMESTAMP_WITH_TZ",
+      "value": "N"
+    },
+    {
+      "name": "CDC_TIMESTAMP_WITH_TZ",
+      "value": "N"
+    },
+    {
+      "name": "FMC_LOADING_WINDOW_TABLE_NAME",
+      "value": "FMC_LOADING_WINDOW_TABLE"
+    },
+    {
+      "name": "REF_TABLE_SUFFIX",
+      "value": null
+    },
+    {
+      "name": "REF_TABLE_PREFIX",
+      "value": "REF"
+    },
+    {
+      "name": "FMC_BEGIN_LW_TIMESTAMP",
+      "value": "FMC_BEGIN_LW_TIMESTAMP"
+    },
+    {
+      "name": "FMC_END_LW_TIMESTAMP",
+      "value": "FMC_END_LW_TIMESTAMP"
+    },
+    {
+      "name": "CLOSE_DELETED_RECORDS",
+      "value": "N"
+    },
+    {
+      "name": "TRIM_SPACES_FROM_BUSINESS_KEY",
+      "value": "Y"
+    },
+    {
+      "name": "FMC_GENERATE_SRC_LOADING_SCRIPTS",
+      "value": "Y"
+    },
+    {
+      "name": "HASHDIFF_NULL_REPLACEMENT",
+      "value": "~"
+    },
+    {
+      "name": "FMC_BATCH_SIZE",
+      "value": "1000"
+    },
+    {
+      "name": "CREATE_INI_TABLES",
+      "value": "Y"
+    },
+    {
+      "name": "SCHEMA_PL_PROCEDURES",
+      "value": "VAULTSPEED_HANDSON_PL_PROC"
+    },
+    {
+      "name": "SOURCE_BV_DEP",
+      "value": "Y"
+    },
+    {
+      "name": "FMC_LOADING_HIST_TABLE_NAME",
+      "value": "FMC_LOADING_HISTORY"
+    },
+    {
+      "name": "FMC_DYNAMIC_LOADING_WINDOW",
+      "value": "Y"
+    },
+    {
+      "name": "CDC_UPDATE_RECORD_ALL_ATTRIBUTES",
+      "value": "Y"
+    },
+    {
+      "name": "CDC_PRE_POST_IMAGE_FLAG",
+      "value": "CDC_PRE_POST_IMAGE_FLAG"
+    },
+    {
+      "name": "CDC_PRE_POST_IMAGE_UNIQUE_KEY",
+      "value": "CDC_PRE_POST_IMAGE_UNIQUE_KEY"
+    },
+    {
+      "name": "CDC_PRE_IMAGE_FLAG_VALUE",
+      "value": "PRE"
+    },
+    {
+      "name": "CDC_POST_IMAGE_FLAG_VALUE",
+      "value": "POST"
+    },
+    {
+      "name": "CDC_LOGPOSITION_AVAILABLE",
+      "value": "N"
+    },
+    {
+      "name": "CDC_LOGPOSITION",
+      "value": "CDC_LOGPOSITION"
+    },
+    {
+      "name": "NO_CHANGE_INDICATION_CHAR",
+      "value": "unchanged"
+    },
+    {
+      "name": "NO_CHANGE_INDICATION_NUMBER",
+      "value": "-1"
+    },
+    {
+      "name": "NO_CHANGE_INDICATION_DATE",
+      "value": "01/01/1970"
+    },
+    {
+      "name": "NO_CHANGE_INDICATION_TIME",
+      "value": "00:00:00"
+    },
+    {
+      "name": "NO_CHANGE_INDICATION_TIMESTAMP",
+      "value": "01/01/1970 00:00:00"
+    },
+    {
+      "name": "NO_CHANGE_INDICATION_OTHER",
+      "value": "unchanged"
+    },
+    {
+      "name": "CDC_PRE_IMAGE_AVAILABLE",
+      "value": "N"
+    },
+    {
+      "name": "SATELLITE_RECORD_TYPE",
+      "value": "SAT"
+    },
+    {
+      "name": "TRANSACTION_TYPE_SATELLITE",
+      "value": "SAT"
+    },
+    {
+      "name": "USE_OBJ_SRC_NAME_FOR_INI_CDC_TABLES",
+      "value": "Y"
+    },
+    {
+      "name": "USE_REMOTE_CDC_DBLINK",
+      "value": "N"
+    },
+    {
+      "name": "CREATE_REMOTE_DELTA_VIEW",
+      "value": "N"
+    },
+    {
+      "name": "USE_LCI_TIMESTAMP_FOR_INITIAL_LOAD",
+      "value": "Y"
+    },
+    {
+      "name": "GENERATE_FOREIGN_KEYS",
+      "value": "Y"
+    },
+    {
+      "name": "DELETE_FLAG_POSITIVE_VALUE",
+      "value": "Y"
+    },
+    {
+      "name": "DELETE_FLAG_NEGATIVE_VALUE",
+      "value": "N"
+    },
+    {
+      "name": "FMC_OVERLAPPING_LOADING_WINDOWS",
+      "value": "N"
+    },
+    {
+      "name": "PIT_TABLE_PREFIX",
+      "value": "PIT"
+    },
+    {
+      "name": "PIT_TABLE_SUFFIX",
+      "value": null
+    },
+    {
+      "name": "SNAPSHOT_TIMESTAMP",
+      "value": "SNAPSHOT_TIMESTAMP"
+    },
+    {
+      "name": "FMC_BV_LOADING_WINDOW_TABLE_NAME",
+      "value": "FMC_BV_LOADING_WINDOW_TABLE"
+    },
+    {
+      "name": "STORE_TEMP_IN_STAGING",
+      "value": "N"
+    },
+    {
+      "name": "UPDATE_LOAD_CYCLE_ID_ON_UPDATE_DELETE",
+      "value": "N"
+    },
+    {
+      "name": "BRIDGE_TABLE_PREFIX",
+      "value": "BRIDGE"
+    },
+    {
+      "name": "BRIDGE_TABLE_SUFFIX",
+      "value": null
+    },
+    {
+      "name": "CAST_SOURCE_ATTRIBUTES",
+      "value": "N"
+    },
+    {
+      "name": "STORE_HUB_HASH_KEYS_IN_LINK_SAT",
+      "value": "N"
+    },
+    {
+      "name": "INSERT_ON_DELETE",
+      "value": "Y"
+    },
+    {
+      "name": "LNA_TABLE_PREFIX",
+      "value": "LNA"
+    },
+    {
+      "name": "LNA_TABLE_SUFFIX",
+      "value": null
+    },
+    {
+      "name": "LAS_TABLE_PREFIX",
+      "value": "LAS"
+    },
+    {
+      "name": "LAS_TABLE_SUFFIX",
+      "value": null
+    },
+    {
+      "name": "LNA_HASH_KEY_PREFIX",
+      "value": "LNA"
+    },
+    {
+      "name": "LNA_HASH_KEY_SUFFIX",
+      "value": "HKEY"
+    },
+    {
+      "name": "GENERATE_PRIMARY_UNIQUE_KEYS",
+      "value": "Y"
+    },
+    {
+      "name": "ERROR_CODE",
+      "value": "ERROR_CODE"
+    },
+    {
+      "name": "ERR_TABLE_PREFIX",
+      "value": "ERR"
+    },
+    {
+      "name": "ERR_TABLE_SUFFIX",
+      "value": "ERR"
+    },
+    {
+      "name": "REFERENTIAL_INTEGRITY_VALIDATED",
+      "value": "N"
+    },
+    {
+      "name": "REFERENTIAL_INTEGRITY_FORCE_LINK_LOAD",
+      "value": "N"
+    },
+    {
+      "name": "SUBSEQUENCE_PREFIX",
+      "value": null
+    },
+    {
+      "name": "SUBSEQUENCE_SUFFIX",
+      "value": "SEQ"
+    },
+    {
+      "name": "NHL_HASH_KEY_PREFIX",
+      "value": "NHL"
+    },
+    {
+      "name": "NHL_HASH_KEY_SUFFIX",
+      "value": "HKEY"
+    },
+    {
+      "name": "GENERATE_SCHEMA_DEFINITIONS",
+      "value": "Y"
+    },
+    {
+      "name": "USE_IDENTIFIER_PREFIXES",
+      "value": "Y"
+    },
+    {
+      "name": "FMC_TYPE",
+      "value": "Airflow"
+    },
+    {
+      "name": "DATA_ORDER",
+      "value": "DUMMY"
+    },
+    {
+      "name": "SNAPSHOT_TS",
+      "value": "SNAPSHOT_TS"
+    },
+    {
+      "name": "MIN_LOAD_TIMESTAMP",
+      "value": "MIN_LOAD_TIMESTAMP"
+    },
+    {
+      "name": "MAX_LOAD_TIMESTAMP",
+      "value": "MAX_LOAD_TIMESTAMP"
+    },
+    {
+      "name": "ORIGIN_ID",
+      "value": "ORIGIN_ID"
+    },
+    {
+      "name": "END_INTERVAL",
+      "value": "END_INTERVAL"
+    },
+    {
+      "name": "GENERAL_ORDER",
+      "value": "GENERAL_ORDER"
+    },
+    {
+      "name": "ADD_RECORD_SOURCE_ATTRIBUTE",
+      "value": "N"
+    },
+    {
+      "name": "RECORD_SOURCE",
+      "value": "RECORD_SOURCE"
+    },
+    {
+      "name": "RECORD_SOURCE_VALUE_TEMPLATE",
+      "value": "<record_src_name>.<table_abbreviated_name>"
+    },
+    {
+      "name": "FMC_WINDOW_OVERLAP_SIZE",
+      "value": "15"
+    },
+    {
+      "name": "FMC_WINDOW_OVERLAP_TYPE",
+      "value": "minute"
+    },
+    {
+      "name": "CREATE_CDC_TABLES",
+      "value": "Y"
+    },
+    {
+      "name": "SUBSEQUENCE_SEQ",
+      "value": "SUBSEQUENCE_SEQ"
+    },
+    {
+      "name": "AGG_HASH_DIFF",
+      "value": "AGG_HASH_DIFF"
+    },
+    {
+      "name": "COUNT_MULTI_ACTIVE",
+      "value": "COUNT_MULTI_ACTIVE"
+    },
+    {
+      "name": "CAST_BINARY_TO_HEX",
+      "value": "Y"
+    },
+    {
+      "name": "STREAMING_SOURCE",
+      "value": "N"
+    },
+    {
+      "name": "WATER_MARK_SIZE",
+      "value": "120"
+    },
+    {
+      "name": "ERROR_RECORD_RETENTION_TIME",
+      "value": "120"
+    },
+    {
+      "name": "STREAMING_EXT_TABLE_PREFIX",
+      "value": "EXT"
+    },
+    {
+      "name": "STREAMING_EXT_TABLE_SUFFIX",
+      "value": "LATE"
+    },
+    {
+      "name": "STREAMING_STG_TABLE_PREFIX",
+      "value": "STG"
+    },
+    {
+      "name": "STREAMING_STG_TABLE_SUFFIX",
+      "value": "FIX"
+    },
+    {
+      "name": "OBJECT_SPECIFIC_LOADING_WINDOW",
+      "value": "N"
+    },
+    {
+      "name": "CDC_BASED_LOADING_WINDOW",
+      "value": "N"
+    },
+    {
+      "name": "OBJECT_NAME",
+      "value": "OBJECT_NAME"
+    },
+    {
+      "name": "FMC_OBJECT_LOADING_HIST_TABLE_NAME",
+      "value": "FMC_OBJECT_LOADING_HISTORY"
+    },
+    {
+      "name": "SCHEMA_INI_R",
+      "value": "PROJECT"
+    },
+    {
+      "name": "SCHEMA_CDC_KAFKA",
+      "value": "PROJECT_CDC_KAFKA"
+    },
+    {
+      "name": "CDC_SEQUENCE",
+      "value": "CDC_SEQUENCE"
+    },
+    {
+      "name": "FMC_BEGIN_LW_SEQUENCE",
+      "value": "FMC_BEGIN_LW_SEQUENCE"
+    },
+    {
+      "name": "FMC_END_LW_SEQUENCE",
+      "value": "FMC_END_LW_SEQUENCE"
+    },
+    {
+      "name": "FMC_FILE_EXTENSION",
+      "value": ".SQL"
+    },
+    {
+      "name": "ADD_RECORD_TRACKING_SATELLITE",
+      "value": "N"
+    },
+    {
+      "name": "EXISTS_FLAG_POSITIVE_VALUE",
+      "value": "Y"
+    },
+    {
+      "name": "EXISTS_FLAG_NEGATIVE_VALUE",
+      "value": "N"
+    },
+    {
+      "name": "RTS_TABLE_PREFIX",
+      "value": "RTS"
+    },
+    {
+      "name": "RTS_TABLE_SUFFIX",
+      "value": null
+    },
+    {
+      "name": "EXISTS_FLAG",
+      "value": "EXISTS_FLAG"
+    },
+    {
+      "name": "SK_SUFFIX",
+      "value": "SK"
+    },
+    {
+      "name": "SK_PREFIX",
+      "value": null
+    },
+    {
+      "name": "STG_TABLE_CURR_PREFIX",
+      "value": "CURR"
+    },
+    {
+      "name": "STG_TABLE_CURR_SUFFIX",
+      "value": "CURR"
+    },
+    {
+      "name": "STG_TABLE_PREV_PREFIX",
+      "value": "PREV"
+    },
+    {
+      "name": "STG_TABLE_PREV_SUFFIX",
+      "value": "PREV"
+    },
+    {
+      "name": "ADD_NH_COUNTER_RECORD_DELETE",
+      "value": "N"
+    },
+    {
+      "name": "NH_COUNTER_POSITIVE_VALUE",
+      "value": "1"
+    },
+    {
+      "name": "NH_COUNTER_NEGATIVE_VALUE",
+      "value": "-1"
+    },
+    {
+      "name": "NH_COUNTER",
+      "value": "COUNTER"
+    },
+    {
+      "name": "USE_ORIGINAL_SOURCE_TABLE_NAME_FOR_INI_CDC_OBJECTS",
+      "value": "N"
+    },
+    {
+      "name": "CONVERT_FMC_TIMEZONE",
+      "value": "N"
+    },
+    {
+      "name": "TARGET_TIMEZONE",
+      "value": "UTC"
+    },
+    {
+      "name": "FMC_TIMEZONE",
+      "value": "UTC"
+    },
+    {
+      "name": "CONVERT_SOURCE_TIMEZONE",
+      "value": "N"
+    },
+    {
+      "name": "SOURCE_TIMEZONE",
+      "value": "UTC"
+    },
+    {
+      "name": "DETECT_UPDATES_INSERTS_ON_FULL_LOAD",
+      "value": "Y"
+    },
+    {
+      "name": "CDC_TIMESTAMP_FORMAT_MASK",
+      "value": null
+    },
+    {
+      "name": "CAST_VS_MANAGED_ATTRIBUTES",
+      "value": "Y"
+    },
+    {
+      "name": "DELTA_GENERATE_INIT_MAPPINGS",
+      "value": "changed"
+    },
+    {
+      "name": "DELTA_GENERATE_INCR_MAPPINGS",
+      "value": "changed"
+    },
+    {
+      "name": "MAX_BUSINESS_KEY_LENGTH",
+      "value": "1500"
+    }
+  ]
+}

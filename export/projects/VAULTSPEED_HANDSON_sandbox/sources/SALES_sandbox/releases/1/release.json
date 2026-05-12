@@ -1,0 +1,1124 @@
+{
+  "number": "1",
+  "comment": "Release 1 for SALES",
+  "saved": true,
+  "editable": false,
+  "locked": true,
+  "available_as_base": true,
+  "prev_release": null,
+  "objects": {
+    "PURCHASED_EBICYCLE": {
+      "object_type": "Many to Many Link and Satellite",
+      "cdc_type": "Change Data Capture",
+      "multi_active": false,
+      "is_split": false,
+      "attributes": {
+        "CUSTOMER_NUMBER": {
+          "business_key": false,
+          "universal_identifier": false,
+          "subsequence_attribute": false,
+          "non_historic": false,
+          "abbreviated_name": "CUSTOMER_NUMBER",
+          "primary_key": false,
+          "data_type": "NUMERIC",
+          "data_length": null
+        },
+        "SERIAL_NUMBER": {
+          "business_key": false,
+          "universal_identifier": false,
+          "subsequence_attribute": false,
+          "non_historic": false,
+          "abbreviated_name": "SERIAL_NUMBER",
+          "primary_key": false,
+          "data_type": "VARCHAR",
+          "data_length": 100
+        },
+        "SHOP_ID": {
+          "business_key": false,
+          "universal_identifier": false,
+          "subsequence_attribute": false,
+          "non_historic": false,
+          "abbreviated_name": "SHOP_ID",
+          "primary_key": false,
+          "data_type": "NUMERIC",
+          "data_length": null
+        }
+      },
+      "relationships": [
+        {
+          "name": "PURCHASED_EBICYCLE_CUSTOMER",
+          "driving_key": false,
+          "attributes": [
+            {
+              "attribute_name": "CUSTOMER_NUMBER",
+              "ref_attribute_name": "PERSON_NUMBER"
+            }
+          ]
+        },
+        {
+          "name": "PURCHASED_EBICYCLE_EBICYCLE",
+          "driving_key": false,
+          "attributes": [
+            {
+              "attribute_name": "SERIAL_NUMBER",
+              "ref_attribute_name": "SERIAL_NUMBER"
+            }
+          ]
+        },
+        {
+          "name": "PURCHASED_EBICYCLE_SHOP",
+          "driving_key": false,
+          "attributes": [
+            {
+              "attribute_name": "SHOP_ID",
+              "ref_attribute_name": "SHOP_ID"
+            }
+          ]
+        },
+        {
+          "name": "SPLIT_4_PURCHASED_EBICYCLE_CUSTOMER",
+          "driving_key": false,
+          "attributes": [
+            {
+              "attribute_name": "CUSTOMER_NUMBER",
+              "ref_attribute_name": "PERSON_NUMBER"
+            }
+          ]
+        }
+      ]
+    },
+    "PURCHASED_BICYCLE": {
+      "object_type": "Many to Many Link and Satellite",
+      "cdc_type": "Change Data Capture",
+      "multi_active": false,
+      "is_split": false,
+      "attributes": {
+        "CUSTOMER_NUMBER": {
+          "business_key": false,
+          "universal_identifier": false,
+          "subsequence_attribute": false,
+          "non_historic": false,
+          "abbreviated_name": "CUSTOMER_NUMBER",
+          "primary_key": false,
+          "data_type": "NUMERIC",
+          "data_length": null
+        },
+        "SERIAL_NUMBER": {
+          "business_key": false,
+          "universal_identifier": false,
+          "subsequence_attribute": false,
+          "non_historic": false,
+          "abbreviated_name": "SERIAL_NUMBER",
+          "primary_key": false,
+          "data_type": "VARCHAR",
+          "data_length": 100
+        },
+        "SHOP_ID": {
+          "business_key": false,
+          "universal_identifier": false,
+          "subsequence_attribute": false,
+          "non_historic": false,
+          "abbreviated_name": "SHOP_ID",
+          "primary_key": false,
+          "data_type": "NUMERIC",
+          "data_length": null
+        }
+      },
+      "relationships": [
+        {
+          "name": "PURCHASED_BICYCLE_BICYCLE",
+          "driving_key": false,
+          "attributes": [
+            {
+              "attribute_name": "SERIAL_NUMBER",
+              "ref_attribute_name": "SERIAL_NUMBER"
+            }
+          ]
+        },
+        {
+          "name": "PURCHASED_BICYCLE_CUSTOMER",
+          "driving_key": false,
+          "attributes": [
+            {
+              "attribute_name": "CUSTOMER_NUMBER",
+              "ref_attribute_name": "PERSON_NUMBER"
+            }
+          ]
+        },
+        {
+          "name": "PURCHASED_EBICYCLE_SHOP",
+          "driving_key": false,
+          "attributes": [
+            {
+              "attribute_name": "SHOP_ID",
+              "ref_attribute_name": "SHOP_ID"
+            }
+          ]
+        },
+        {
+          "name": "SPLIT_4_PURCHASED_BICYCLE_CUSTOMER",
+          "driving_key": false,
+          "attributes": [
+            {
+              "attribute_name": "CUSTOMER_NUMBER",
+              "ref_attribute_name": "PERSON_NUMBER"
+            }
+          ]
+        }
+      ]
+    },
+    "PURCHASED_MCYCLE": {
+      "object_type": "Many to Many Link and Satellite",
+      "cdc_type": "Change Data Capture",
+      "multi_active": false,
+      "is_split": false,
+      "attributes": {
+        "CUSTOMER_NUMBER": {
+          "business_key": false,
+          "universal_identifier": false,
+          "subsequence_attribute": false,
+          "non_historic": false,
+          "abbreviated_name": "CUSTOMER_NUMBER",
+          "primary_key": false,
+          "data_type": "NUMERIC",
+          "data_length": null
+        },
+        "VEHICLE_NUMBER": {
+          "business_key": false,
+          "universal_identifier": false,
+          "subsequence_attribute": false,
+          "non_historic": false,
+          "abbreviated_name": "VEHICLE_NUMBER",
+          "primary_key": false,
+          "data_type": "VARCHAR",
+          "data_length": 100
+        },
+        "SHOP_ID": {
+          "business_key": false,
+          "universal_identifier": false,
+          "subsequence_attribute": false,
+          "non_historic": false,
+          "abbreviated_name": "SHOP_ID",
+          "primary_key": false,
+          "data_type": "NUMERIC",
+          "data_length": null
+        }
+      },
+      "relationships": [
+        {
+          "name": "PURCHASED_EBICYCLE_SHOP",
+          "driving_key": false,
+          "attributes": [
+            {
+              "attribute_name": "SHOP_ID",
+              "ref_attribute_name": "SHOP_ID"
+            }
+          ]
+        },
+        {
+          "name": "PURCHASED_MCYCLE_CUSTOMER",
+          "driving_key": false,
+          "attributes": [
+            {
+              "attribute_name": "CUSTOMER_NUMBER",
+              "ref_attribute_name": "PERSON_NUMBER"
+            }
+          ]
+        },
+        {
+          "name": "PURCHASED_MCYCLE_MOTORCYCLES",
+          "driving_key": false,
+          "attributes": [
+            {
+              "attribute_name": "VEHICLE_NUMBER",
+              "ref_attribute_name": "VEHICLE_NUMBER"
+            }
+          ]
+        },
+        {
+          "name": "SPLIT_4_PURCHASED_MCYCLE_CUSTOMER",
+          "driving_key": false,
+          "attributes": [
+            {
+              "attribute_name": "CUSTOMER_NUMBER",
+              "ref_attribute_name": "PERSON_NUMBER"
+            }
+          ]
+        }
+      ]
+    },
+    "PURCHASED_PASSCAR": {
+      "object_type": "Many to Many Link and Satellite",
+      "cdc_type": "Change Data Capture",
+      "multi_active": false,
+      "is_split": false,
+      "attributes": {
+        "CUSTOMER_NUMBER": {
+          "business_key": false,
+          "universal_identifier": false,
+          "subsequence_attribute": false,
+          "non_historic": false,
+          "abbreviated_name": "CUSTOMER_NUMBER",
+          "primary_key": false,
+          "data_type": "NUMERIC",
+          "data_length": null
+        },
+        "VEHICLE_NUMBER": {
+          "business_key": false,
+          "universal_identifier": false,
+          "subsequence_attribute": false,
+          "non_historic": false,
+          "abbreviated_name": "VEHICLE_NUMBER",
+          "primary_key": false,
+          "data_type": "VARCHAR",
+          "data_length": 100
+        },
+        "SHOP_ID": {
+          "business_key": false,
+          "universal_identifier": false,
+          "subsequence_attribute": false,
+          "non_historic": false,
+          "abbreviated_name": "SHOP_ID",
+          "primary_key": false,
+          "data_type": "NUMERIC",
+          "data_length": null
+        }
+      },
+      "relationships": [
+        {
+          "name": "PURCHASED_EBICYCLE_SHOP",
+          "driving_key": false,
+          "attributes": [
+            {
+              "attribute_name": "SHOP_ID",
+              "ref_attribute_name": "SHOP_ID"
+            }
+          ]
+        },
+        {
+          "name": "PURCHASED_PASSCAR_CUSTOMER",
+          "driving_key": false,
+          "attributes": [
+            {
+              "attribute_name": "CUSTOMER_NUMBER",
+              "ref_attribute_name": "PERSON_NUMBER"
+            }
+          ]
+        },
+        {
+          "name": "PURCHASED_PASSCAR_PASSENGER_CARS",
+          "driving_key": false,
+          "attributes": [
+            {
+              "attribute_name": "VEHICLE_NUMBER",
+              "ref_attribute_name": "VEHICLE_NUMBER"
+            }
+          ]
+        },
+        {
+          "name": "SPLIT_4_PURCHASED_PASSCAR_CUSTOMER",
+          "driving_key": false,
+          "attributes": [
+            {
+              "attribute_name": "CUSTOMER_NUMBER",
+              "ref_attribute_name": "PERSON_NUMBER"
+            }
+          ]
+        }
+      ]
+    },
+    "INVOICES": {
+      "object_type": "Hub and Satellite",
+      "cdc_type": "Change Data Capture",
+      "multi_active": false,
+      "is_split": false,
+      "attributes": {
+        "INVOICE_ID": {
+          "business_key": false,
+          "universal_identifier": false,
+          "subsequence_attribute": false,
+          "non_historic": false,
+          "abbreviated_name": "INVOICE_ID",
+          "primary_key": true,
+          "data_type": "VARCHAR",
+          "data_length": 50
+        },
+        "CUSTOMER_INVOICE_ID": {
+          "business_key": false,
+          "universal_identifier": false,
+          "subsequence_attribute": false,
+          "non_historic": false,
+          "abbreviated_name": "CUSTOMER_INVOICE_ID",
+          "primary_key": false,
+          "data_type": "NUMERIC",
+          "data_length": null
+        },
+        "INVOICE_DATE": {
+          "business_key": false,
+          "universal_identifier": false,
+          "subsequence_attribute": false,
+          "non_historic": false,
+          "abbreviated_name": "INVOICE_DATE",
+          "primary_key": false,
+          "data_type": "TIMESTAMP",
+          "data_length": 29
+        },
+        "AMOUNT": {
+          "business_key": false,
+          "universal_identifier": false,
+          "subsequence_attribute": false,
+          "non_historic": false,
+          "abbreviated_name": "AMOUNT",
+          "primary_key": false,
+          "data_type": "NUMERIC",
+          "data_length": null
+        }
+      },
+      "relationships": [
+        {
+          "name": "INVOICES_PERSONS_1_FK",
+          "driving_key": false,
+          "attributes": [
+            {
+              "attribute_name": "CUSTOMER_INVOICE_ID",
+              "ref_attribute_name": "PERSON_NUMBER"
+            }
+          ]
+        },
+        {
+          "name": "SPLIT_4_INVOICES_PERSONS_1_FK",
+          "driving_key": false,
+          "attributes": [
+            {
+              "attribute_name": "CUSTOMER_INVOICE_ID",
+              "ref_attribute_name": "PERSON_NUMBER"
+            }
+          ]
+        }
+      ]
+    },
+    "INVOICE_LINE_ITEMS": {
+      "object_type": "Satellite",
+      "cdc_type": "Change Data Capture",
+      "multi_active": true,
+      "is_split": false,
+      "attributes": {
+        "INVOICE_ID": {
+          "business_key": false,
+          "universal_identifier": false,
+          "subsequence_attribute": false,
+          "non_historic": false,
+          "abbreviated_name": "INVOICE_ID",
+          "primary_key": true,
+          "data_type": "VARCHAR",
+          "data_length": 50
+        },
+        "INVOICE_LINE_ID": {
+          "business_key": false,
+          "universal_identifier": false,
+          "subsequence_attribute": true,
+          "non_historic": false,
+          "abbreviated_name": "INVOICE_LINE_ID",
+          "primary_key": true,
+          "data_type": "NUMERIC",
+          "data_length": null
+        },
+        "PRODUCT_NUMBER": {
+          "business_key": false,
+          "universal_identifier": false,
+          "subsequence_attribute": false,
+          "non_historic": false,
+          "abbreviated_name": "PRODUCT_NUMBER",
+          "primary_key": false,
+          "data_type": "VARCHAR",
+          "data_length": 100
+        },
+        "QUANTITY": {
+          "business_key": false,
+          "universal_identifier": false,
+          "subsequence_attribute": false,
+          "non_historic": false,
+          "abbreviated_name": "QUANTITY",
+          "primary_key": false,
+          "data_type": "NUMERIC",
+          "data_length": null
+        },
+        "AMOUNT": {
+          "business_key": false,
+          "universal_identifier": false,
+          "subsequence_attribute": false,
+          "non_historic": false,
+          "abbreviated_name": "AMOUNT",
+          "primary_key": false,
+          "data_type": "NUMERIC",
+          "data_length": null
+        },
+        "DISCOUNT": {
+          "business_key": false,
+          "universal_identifier": false,
+          "subsequence_attribute": false,
+          "non_historic": false,
+          "abbreviated_name": "DISCOUNT",
+          "primary_key": false,
+          "data_type": "NUMERIC",
+          "data_length": null
+        }
+      },
+      "relationships": [
+        {
+          "name": "INVOICES_INVOICE_LINE_ITEMS",
+          "driving_key": false,
+          "attributes": [
+            {
+              "attribute_name": "INVOICE_ID",
+              "ref_attribute_name": "INVOICE_ID"
+            }
+          ]
+        }
+      ]
+    },
+    "SHOPS": {
+      "object_type": "Hub and Satellite",
+      "cdc_type": "Change Data Capture",
+      "multi_active": false,
+      "is_split": false,
+      "attributes": {
+        "SHOP_ID": {
+          "business_key": false,
+          "universal_identifier": false,
+          "subsequence_attribute": false,
+          "non_historic": false,
+          "abbreviated_name": "SHOP_ID",
+          "primary_key": true,
+          "data_type": "NUMERIC",
+          "data_length": null
+        },
+        "SHOP_CODE": {
+          "business_key": false,
+          "universal_identifier": false,
+          "subsequence_attribute": false,
+          "non_historic": false,
+          "abbreviated_name": "SHOP_CODE",
+          "primary_key": false,
+          "data_type": "VARCHAR",
+          "data_length": 100
+        },
+        "SHOP_NAME": {
+          "business_key": false,
+          "universal_identifier": false,
+          "subsequence_attribute": false,
+          "non_historic": false,
+          "abbreviated_name": "SHOP_NAME",
+          "primary_key": false,
+          "data_type": "VARCHAR",
+          "data_length": 100
+        },
+        "SHOPPING_CENTER_ID": {
+          "business_key": false,
+          "universal_identifier": false,
+          "subsequence_attribute": false,
+          "non_historic": false,
+          "abbreviated_name": "SHOPPING_CENTER_ID",
+          "primary_key": false,
+          "data_type": "NUMERIC",
+          "data_length": null
+        },
+        "SHOP_LOCATION": {
+          "business_key": false,
+          "universal_identifier": false,
+          "subsequence_attribute": false,
+          "non_historic": false,
+          "abbreviated_name": "SHOP_LOCATION",
+          "primary_key": false,
+          "data_type": "VARCHAR",
+          "data_length": 100
+        },
+        "ADDRESS_ID": {
+          "business_key": false,
+          "universal_identifier": false,
+          "subsequence_attribute": false,
+          "non_historic": false,
+          "abbreviated_name": "ADDRESS_ID",
+          "primary_key": false,
+          "data_type": "NUMERIC",
+          "data_length": null
+        },
+        "NUMBER_OF_EMPLOYEES": {
+          "business_key": false,
+          "universal_identifier": false,
+          "subsequence_attribute": false,
+          "non_historic": false,
+          "abbreviated_name": "NUMBER_OF_EMPLOYEES",
+          "primary_key": false,
+          "data_type": "NUMERIC",
+          "data_length": null
+        },
+        "SHOP_SIZE": {
+          "business_key": false,
+          "universal_identifier": false,
+          "subsequence_attribute": false,
+          "non_historic": false,
+          "abbreviated_name": "SHOP_SIZE",
+          "primary_key": false,
+          "data_type": "VARCHAR",
+          "data_length": 20
+        },
+        "HAS_PARKING": {
+          "business_key": false,
+          "universal_identifier": false,
+          "subsequence_attribute": false,
+          "non_historic": false,
+          "abbreviated_name": "HAS_PARKING",
+          "primary_key": false,
+          "data_type": "BOOL",
+          "data_length": 1
+        },
+        "MONTLY_COST": {
+          "business_key": false,
+          "universal_identifier": false,
+          "subsequence_attribute": false,
+          "non_historic": false,
+          "abbreviated_name": "MONTLY_COST",
+          "primary_key": false,
+          "data_type": "NUMERIC",
+          "data_length": null
+        }
+      },
+      "relationships": [
+        {
+          "name": "SHOP_ADDRESS_FK",
+          "driving_key": false,
+          "attributes": [
+            {
+              "attribute_name": "ADDRESS_ID",
+              "ref_attribute_name": "ADDRESS_NUMBER"
+            }
+          ]
+        }
+      ]
+    },
+    "PERSONS": {
+      "object_type": "Source object",
+      "cdc_type": "Change Data Capture",
+      "multi_active": false,
+      "is_split": false,
+      "attributes": {
+        "PERSON_NUMBER": {
+          "business_key": false,
+          "universal_identifier": false,
+          "subsequence_attribute": false,
+          "non_historic": false,
+          "abbreviated_name": "PERSON_NUMBER",
+          "primary_key": true,
+          "data_type": "NUMERIC",
+          "data_length": null
+        },
+        "NATIONAL_PERSON_ID": {
+          "business_key": true,
+          "universal_identifier": false,
+          "subsequence_attribute": false,
+          "non_historic": false,
+          "abbreviated_name": "NATIONAL_PERSON_ID",
+          "primary_key": false,
+          "data_type": "VARCHAR",
+          "data_length": 100
+        },
+        "FIRSTNAME": {
+          "business_key": false,
+          "universal_identifier": false,
+          "subsequence_attribute": false,
+          "non_historic": false,
+          "abbreviated_name": "FIRSTNAME",
+          "primary_key": false,
+          "data_type": "VARCHAR",
+          "data_length": 100
+        },
+        "LASTNAME": {
+          "business_key": false,
+          "universal_identifier": false,
+          "subsequence_attribute": false,
+          "non_historic": false,
+          "abbreviated_name": "LASTNAME",
+          "primary_key": false,
+          "data_type": "VARCHAR",
+          "data_length": 100
+        },
+        "BIRTHDATE": {
+          "business_key": false,
+          "universal_identifier": false,
+          "subsequence_attribute": false,
+          "non_historic": false,
+          "abbreviated_name": "BIRTHDATE",
+          "primary_key": false,
+          "data_type": "DATE",
+          "data_length": 13
+        },
+        "GENDER": {
+          "business_key": false,
+          "universal_identifier": false,
+          "subsequence_attribute": false,
+          "non_historic": false,
+          "abbreviated_name": "GENDER",
+          "primary_key": false,
+          "data_type": "BPCHAR",
+          "data_length": 1
+        },
+        "ADDRESS_NUMBER": {
+          "business_key": false,
+          "universal_identifier": false,
+          "subsequence_attribute": false,
+          "non_historic": false,
+          "abbreviated_name": "ADDRESS_NUMBER",
+          "primary_key": false,
+          "data_type": "NUMERIC",
+          "data_length": null
+        },
+        "IS_ACTIVE": {
+          "business_key": false,
+          "universal_identifier": false,
+          "subsequence_attribute": false,
+          "non_historic": false,
+          "abbreviated_name": "IS_ACTIVE",
+          "primary_key": false,
+          "data_type": "BOOL",
+          "data_length": 1
+        },
+        "SEND_COMMERCIAL_MESSAGES": {
+          "business_key": false,
+          "universal_identifier": false,
+          "subsequence_attribute": false,
+          "non_historic": false,
+          "abbreviated_name": "SEND_COMMERCIAL_MESSAGES",
+          "primary_key": false,
+          "data_type": "BOOL",
+          "data_length": 1
+        },
+        "FIRST_PURCHASE": {
+          "business_key": false,
+          "universal_identifier": false,
+          "subsequence_attribute": false,
+          "non_historic": false,
+          "abbreviated_name": "FIRST_PURCHASE",
+          "primary_key": false,
+          "data_type": "DATE",
+          "data_length": 13
+        },
+        "ADDITIONAL_INFO": {
+          "business_key": false,
+          "universal_identifier": false,
+          "subsequence_attribute": false,
+          "non_historic": false,
+          "abbreviated_name": "ADDITIONAL_INFO",
+          "primary_key": false,
+          "data_type": "TEXT",
+          "data_length": null
+        },
+        "IS_EMPLOYEE": {
+          "business_key": false,
+          "universal_identifier": false,
+          "subsequence_attribute": false,
+          "non_historic": false,
+          "abbreviated_name": "IS_EMPLOYEE",
+          "primary_key": false,
+          "data_type": "BOOL",
+          "data_length": 1
+        },
+        "FUNCTION_DESCRIPTION": {
+          "business_key": false,
+          "universal_identifier": false,
+          "subsequence_attribute": false,
+          "non_historic": false,
+          "abbreviated_name": "FUNCTION_DESCRIPTION",
+          "primary_key": false,
+          "data_type": "VARCHAR",
+          "data_length": 200
+        },
+        "EMPLOYEE_SKILLS": {
+          "business_key": false,
+          "universal_identifier": false,
+          "subsequence_attribute": false,
+          "non_historic": false,
+          "abbreviated_name": "EMPLOYEE_SKILLS",
+          "primary_key": false,
+          "data_type": "VARCHAR",
+          "data_length": 200
+        }
+      },
+      "relationships": [
+        {
+          "name": "CUSTOMER_ADDRESS_FK",
+          "driving_key": false,
+          "attributes": [
+            {
+              "attribute_name": "ADDRESS_NUMBER",
+              "ref_attribute_name": "ADDRESS_NUMBER"
+            }
+          ]
+        }
+      ]
+    },
+    "EMPLOYEES": {
+      "object_type": "Hub and Satellite",
+      "cdc_type": "Change Data Capture",
+      "multi_active": false,
+      "is_split": true,
+      "attributes": {
+        "EMPLOYEE_SKILLS": {
+          "business_key": false,
+          "universal_identifier": false,
+          "subsequence_attribute": false,
+          "non_historic": false,
+          "abbreviated_name": "EMPLOYEE_SKILLS",
+          "primary_key": false,
+          "data_type": "VARCHAR",
+          "data_length": 200
+        },
+        "FUNCTION_DESCRIPTION": {
+          "business_key": false,
+          "universal_identifier": false,
+          "subsequence_attribute": false,
+          "non_historic": false,
+          "abbreviated_name": "FUNCTION_DESCRIPTION",
+          "primary_key": false,
+          "data_type": "VARCHAR",
+          "data_length": 200
+        },
+        "IS_EMPLOYEE": {
+          "business_key": false,
+          "universal_identifier": false,
+          "subsequence_attribute": false,
+          "non_historic": false,
+          "abbreviated_name": "IS_EMPLOYEE",
+          "primary_key": false,
+          "data_type": "BOOL",
+          "data_length": 1
+        },
+        "IS_ACTIVE": {
+          "business_key": false,
+          "universal_identifier": false,
+          "subsequence_attribute": false,
+          "non_historic": false,
+          "abbreviated_name": "IS_ACTIVE",
+          "primary_key": false,
+          "data_type": "BOOL",
+          "data_length": 1
+        },
+        "ADDRESS_NUMBER": {
+          "business_key": false,
+          "universal_identifier": false,
+          "subsequence_attribute": false,
+          "non_historic": false,
+          "abbreviated_name": "ADDRESS_NUMBER",
+          "primary_key": false,
+          "data_type": "NUMERIC",
+          "data_length": null
+        },
+        "GENDER": {
+          "business_key": false,
+          "universal_identifier": false,
+          "subsequence_attribute": false,
+          "non_historic": false,
+          "abbreviated_name": "GENDER",
+          "primary_key": false,
+          "data_type": "BPCHAR",
+          "data_length": 1
+        },
+        "BIRTHDATE": {
+          "business_key": false,
+          "universal_identifier": false,
+          "subsequence_attribute": false,
+          "non_historic": false,
+          "abbreviated_name": "BIRTHDATE",
+          "primary_key": false,
+          "data_type": "DATE",
+          "data_length": 13
+        },
+        "LASTNAME": {
+          "business_key": false,
+          "universal_identifier": false,
+          "subsequence_attribute": false,
+          "non_historic": false,
+          "abbreviated_name": "LASTNAME",
+          "primary_key": false,
+          "data_type": "VARCHAR",
+          "data_length": 100
+        },
+        "FIRSTNAME": {
+          "business_key": false,
+          "universal_identifier": false,
+          "subsequence_attribute": false,
+          "non_historic": false,
+          "abbreviated_name": "FIRSTNAME",
+          "primary_key": false,
+          "data_type": "VARCHAR",
+          "data_length": 100
+        },
+        "NATIONAL_PERSON_ID": {
+          "business_key": true,
+          "universal_identifier": false,
+          "subsequence_attribute": false,
+          "non_historic": false,
+          "abbreviated_name": "NATIONAL_PERSON_ID",
+          "primary_key": false,
+          "data_type": "VARCHAR",
+          "data_length": 100
+        },
+        "PERSON_NUMBER": {
+          "business_key": false,
+          "universal_identifier": false,
+          "subsequence_attribute": false,
+          "non_historic": false,
+          "abbreviated_name": "PERSON_NUMBER",
+          "primary_key": true,
+          "data_type": "NUMERIC",
+          "data_length": null
+        }
+      },
+      "relationships": [
+        {
+          "name": "CUSTOMER_ADDRESS_FK",
+          "driving_key": false,
+          "attributes": [
+            {
+              "attribute_name": "ADDRESS_NUMBER",
+              "ref_attribute_name": "ADDRESS_NUMBER"
+            }
+          ]
+        }
+      ],
+      "parent_table_identifier": 57,
+      "auto_sync_constraints": false,
+      "auto_sync_referencing_constraints": false,
+      "auto_sync_attributes": false,
+      "deduplicate_data_on_load": true
+    },
+    "CUSTOMERS": {
+      "object_type": "Hub and Satellite",
+      "cdc_type": "Change Data Capture",
+      "multi_active": false,
+      "is_split": true,
+      "attributes": {
+        "ADDITIONAL_INFO": {
+          "business_key": false,
+          "universal_identifier": false,
+          "subsequence_attribute": false,
+          "non_historic": false,
+          "abbreviated_name": "ADDITIONAL_INFO",
+          "primary_key": false,
+          "data_type": "TEXT",
+          "data_length": null
+        },
+        "FIRST_PURCHASE": {
+          "business_key": false,
+          "universal_identifier": false,
+          "subsequence_attribute": false,
+          "non_historic": false,
+          "abbreviated_name": "FIRST_PURCHASE",
+          "primary_key": false,
+          "data_type": "DATE",
+          "data_length": 13
+        },
+        "SEND_COMMERCIAL_MESSAGES": {
+          "business_key": false,
+          "universal_identifier": false,
+          "subsequence_attribute": false,
+          "non_historic": false,
+          "abbreviated_name": "SEND_COMMERCIAL_MESSAGES",
+          "primary_key": false,
+          "data_type": "BOOL",
+          "data_length": 1
+        },
+        "IS_ACTIVE": {
+          "business_key": false,
+          "universal_identifier": false,
+          "subsequence_attribute": false,
+          "non_historic": false,
+          "abbreviated_name": "IS_ACTIVE",
+          "primary_key": false,
+          "data_type": "BOOL",
+          "data_length": 1
+        },
+        "ADDRESS_NUMBER": {
+          "business_key": false,
+          "universal_identifier": false,
+          "subsequence_attribute": false,
+          "non_historic": false,
+          "abbreviated_name": "ADDRESS_NUMBER",
+          "primary_key": false,
+          "data_type": "NUMERIC",
+          "data_length": null
+        },
+        "GENDER": {
+          "business_key": false,
+          "universal_identifier": false,
+          "subsequence_attribute": false,
+          "non_historic": false,
+          "abbreviated_name": "GENDER",
+          "primary_key": false,
+          "data_type": "BPCHAR",
+          "data_length": 1
+        },
+        "BIRTHDATE": {
+          "business_key": false,
+          "universal_identifier": false,
+          "subsequence_attribute": false,
+          "non_historic": false,
+          "abbreviated_name": "BIRTHDATE",
+          "primary_key": false,
+          "data_type": "DATE",
+          "data_length": 13
+        },
+        "LASTNAME": {
+          "business_key": false,
+          "universal_identifier": false,
+          "subsequence_attribute": false,
+          "non_historic": false,
+          "abbreviated_name": "LASTNAME",
+          "primary_key": false,
+          "data_type": "VARCHAR",
+          "data_length": 100
+        },
+        "FIRSTNAME": {
+          "business_key": false,
+          "universal_identifier": false,
+          "subsequence_attribute": false,
+          "non_historic": false,
+          "abbreviated_name": "FIRSTNAME",
+          "primary_key": false,
+          "data_type": "VARCHAR",
+          "data_length": 100
+        },
+        "NATIONAL_PERSON_ID": {
+          "business_key": true,
+          "universal_identifier": false,
+          "subsequence_attribute": false,
+          "non_historic": false,
+          "abbreviated_name": "NATIONAL_PERSON_ID",
+          "primary_key": false,
+          "data_type": "VARCHAR",
+          "data_length": 100
+        },
+        "PERSON_NUMBER": {
+          "business_key": false,
+          "universal_identifier": false,
+          "subsequence_attribute": false,
+          "non_historic": false,
+          "abbreviated_name": "PERSON_NUMBER",
+          "primary_key": true,
+          "data_type": "NUMERIC",
+          "data_length": null
+        }
+      },
+      "relationships": [
+        {
+          "name": "CUSTOMER_ADDRESS_FK",
+          "driving_key": false,
+          "attributes": [
+            {
+              "attribute_name": "ADDRESS_NUMBER",
+              "ref_attribute_name": "ADDRESS_NUMBER"
+            }
+          ]
+        }
+      ],
+      "parent_table_identifier": 57,
+      "auto_sync_constraints": false,
+      "auto_sync_referencing_constraints": false,
+      "auto_sync_attributes": false,
+      "deduplicate_data_on_load": true
+    }
+  },
+  "hubs": {
+    "HUB_ADDRESSES": {
+      "hub_type": "SINGLE MASTER"
+    },
+    "HUB_BICYCLES": {
+      "hub_type": "MULTI MASTER"
+    },
+    "HUB_ELECTRIC_BICYCLES": {
+      "hub_type": "MULTI MASTER"
+    },
+    "HUB_INVOICES": {
+      "hub_type": "SINGLE MASTER"
+    },
+    "HUB_MOTORCYCLES": {
+      "hub_type": "MULTI MASTER"
+    },
+    "HUB_PASSENGER_CARS": {
+      "hub_type": "MULTI MASTER"
+    },
+    "HUB_CUSTOMERS": {
+      "hub_type": "SINGLE MASTER"
+    },
+    "HUB_EMPLOYEES": {
+      "hub_type": "SINGLE MASTER"
+    },
+    "HUB_SHOPS": {
+      "hub_type": "MULTI MASTER"
+    }
+  },
+  "sats": {
+    "SAT_SLS_ADDRESSES": {
+      "splits": {}
+    },
+    "SAT_SLS_BICYCLES": {
+      "splits": {}
+    },
+    "SAT_SLS_ELECTRIC_BICYCLES": {
+      "splits": {}
+    },
+    "SAT_SLS_INVOICE_LINE_ITEMS": {
+      "splits": {}
+    },
+    "SAT_SLS_INVOICES": {
+      "splits": {}
+    },
+    "SAT_SLS_MOTORCYCLES": {
+      "splits": {}
+    },
+    "SAT_SLS_PASSENGER_CARS": {
+      "splits": {}
+    },
+    "SAT_SLS_CUSTOMERS": {
+      "splits": {
+        "GDPR": {
+          "type": null,
+          "attributes": [
+            "FIRSTNAME",
+            "LASTNAME",
+            "BIRTHDATE",
+            "GENDER",
+            "IS_ACTIVE"
+          ]
+        },
+        "GENERAL": {
+          "type": null,
+          "attributes": [
+            "IS_ACTIVE",
+            "SEND_COMMERCIAL_MESSAGES",
+            "FIRST_PURCHASE",
+            "ADDITIONAL_INFO"
+          ]
+        }
+      }
+    },
+    "SAT_SLS_EMPLOYEES": {
+      "splits": {}
+    },
+    "SAT_SLS_SHOPS": {
+      "splits": {}
+    },
+    "LDS_SLS_PURCHASED_BICYCLE": {
+      "splits": {}
+    },
+    "LDS_SLS_PURCHASED_EBICYCLE": {
+      "splits": {}
+    },
+    "LDS_SLS_PURCHASED_MCYCLE": {
+      "splits": {}
+    },
+    "LDS_SLS_PURCHASED_PASSCAR": {
+      "splits": {}
+    }
+  }
+}
